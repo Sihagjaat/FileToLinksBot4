@@ -13,7 +13,7 @@ from pyrogram.errors import UserNotParticipant
 from sujan.utils.file_properties import get_name, get_hash, get_media_file_size
 db = Database(Var.DATABASE_URL, Var.name)
 from pyrogram.types import ReplyKeyboardMarkup
-from sujan.vars import bot_name , bisal_channel , bisal_grp
+from sujan.vars import bot_name , sujan_channel , sujan_grp
 
 if MY_PASS:
             buttonz=ReplyKeyboardMarkup(
