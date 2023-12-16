@@ -7,8 +7,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 bot_name = " Fɪʟᴇ2Lɪɴᴋ Bᴏᴛ"
-sujan_channel = "https://telegram.me/bisal_files"
-sujan_grp = "https://t.me/+PA8OPL2Zglk3MDM1"
+sujan_channel = "https://telegram.me/Sujan_BotZ"
+sujan_grp = "https://telegram.me/Sujan_BotZ"
 
 class Var(object):
     MULTI_CLIENT = False
