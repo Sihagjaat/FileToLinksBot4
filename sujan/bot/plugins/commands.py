@@ -184,7 +184,7 @@ async def cb_handler(client, query):
         )
     elif data == "help":
         await query.message.edit_caption(
-        caption=f"<b>Wᴇ Dᴏɴ'ᴛ Nᴇᴇᴅ Mᴀɴʏ ᴄᴏᴍᴍᴀɴᴅs Tᴏ Usᴇ Tʜɪs Bᴏᴛ 🤩.\n\nJᴜsᴛ Sᴇɴᴅ Mᴇ Vɪᴅᴇᴏ Fɪʟᴇs Aɴᴅ ɪ Wɪʟʟ Gɪᴠᴇ Yᴏᴜ Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ & Sᴛʀᴇᴀᴍᴀʙʟᴇ Lɪɴᴋ.\n\nOʀ Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Iɴ Yᴏᴜʀ Cʜᴀɴɴᴇʟ.\n\nJᴜsᴛ Aᴅᴅ Mᴇ Aɴᴅ Mᴀᴋᴇ Mᴇ Aᴅᴍɪɴ Aɴᴅ Sᴇᴇ Mʏ Mᴀɢɪᴄ 🪄</b>",
+        caption=f"<b>Nᴏ Nᴇᴇᴅ Mᴀɴʏ ᴄᴏᴍᴍᴀɴᴅs Tᴏ Usᴇ Tʜɪs Bᴏᴛ 🤩.\n\nJᴜsᴛ Sᴇɴᴅ Mᴇ Vɪᴅᴇᴏ Fɪʟᴇs Aɴᴅ ɪ Wɪʟʟ Gɪᴠᴇ Yᴏᴜ Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ & Sᴛʀᴇᴀᴍᴀʙʟᴇ Lɪɴᴋ.\n\nOʀ Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Iɴ Yᴏᴜʀ Cʜᴀɴɴᴇʟ.\n\nJᴜsᴛ Aᴅᴅ Mᴇ Aɴᴅ Mᴀᴋᴇ Mᴇ Aᴅᴍɪɴ Aɴᴅ Sᴇᴇ Mʏ Mᴀɢɪᴄ 🪄</b>",
             reply_markup=InlineKeyboardMarkup(
 [[ 
                      InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="start"),
