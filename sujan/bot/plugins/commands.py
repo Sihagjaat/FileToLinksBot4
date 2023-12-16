@@ -85,7 +85,7 @@ async def start(b, m):
     caption= SRT_TXT.format(m.from_user.mention(style="md")),
     reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 📯", url=bisal_channel)],
+            [InlineKeyboardButton("Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 📯", url=sujan_channel)],
             [
                  InlineKeyboardButton("ᴀʙᴏᴜᴛ 🎛️", callback_data="about"),
                  InlineKeyboardButton("ʜᴇʟᴘ 💡", callback_data="help")
@@ -140,7 +140,7 @@ async def help_cd(b, m):
     reply_markup=InlineKeyboardMarkup(
         [
             [   
-                InlineKeyboardButton("Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 📯", url=bisal_channel)
+                InlineKeyboardButton("Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 📯", url=sujan_channel)
             ],
             [
                 InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="start"),
@@ -163,7 +163,7 @@ async def cb_handler(client, query):
         caption= SRT_TXT.format(query.from_user.mention(style="md")),
         reply_markup=InlineKeyboardMarkup(
                 [
-            [InlineKeyboardButton("Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 📯", url=bisal_channel)],
+            [InlineKeyboardButton("Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 📯", url=sujan_channel)],
             [
                  InlineKeyboardButton("Aʙᴏᴜᴛ 🎛️", callback_data="about"),
                  InlineKeyboardButton("Hᴇʟᴘ 💡", callback_data="help")
