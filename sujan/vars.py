@@ -12,9 +12,9 @@ sujan_grp = "https://telegram.me/Sujan_BotZ"
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', '20790743'))
-    API_HASH = str(getenv('API_HASH', '266b46661c0eb26ee0cb9ef7dfebfe39'))
-    BOT_TOKEN = str(getenv('BOT_TOKEN' , '6405960633:AAEp-sksF1q49Gkug9Y5ChQn2LWz57Awzw8'))
+    API_ID = int(getenv('API_ID', '20077744'))
+    API_HASH = str(getenv('API_HASH', '64f8e1cce4c865e981a8000f4ae33820'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN' , '6986528172:AAHWOxTQ9oIbilQFDX8xm137kCArmQryTVo'))
     name = str(getenv('name', 'file2link_bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
@@ -40,7 +40,7 @@ class Var(object):
     else:
         URL = "http://{}/".format(FQDN)
     DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://jeyesa3599:jeyesa3599@cluster0.aloblt2.mongodb.net/?retryWrites=true&w=majority'))
-    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'Sujan_BotZ')) 
+    UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001929954249")).split()))   
     BAN_CHNL = list(set(int(x) for x in str(getenv("BAN_CHNL", "-1001929954249")).split()))   
     
