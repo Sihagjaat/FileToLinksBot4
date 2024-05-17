@@ -20,13 +20,11 @@ MY_PASS = os.environ.get("MY_PASS", None)
 pass_dict = {}
 pass_db = Database(Var.DATABASE_URL, "ag_passwords")
 
-msg_text ="""<b>‣ Yᴏᴜʀ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴇᴅ ! 
+msg_text ="""<b>‣ YᴏᴜƦ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴇᴅ !
 
-🗃️ Fɪʟᴇ Nᴀᴍᴇ : <i>{}</i>
-🔘 Fɪʟᴇ Sɪᴢᴇ : {}
+🗃️ FꞮʟᴇ Nᴀᴍᴇ : <b>{}</b>
 
-🚀 <a href="{}"> 𝗙𝗔𝗦𝗧 𝗗𝗢𝗪𝗡𝗟𝗢𝗔𝗗</a>
-🎥 <a href="{}"> 𝗪𝗔𝗧𝗖𝗛 𝗢𝗡𝗟𝗜𝗡𝗘</a>"""
+🔘 Fɪʟᴇ Sɪᴢᴇ : {} </b>"""
 
 @StreamBot.on_message((filters.regex("login🔑") | filters.command("login")) , group=4)
 async def login_handler(c: Client, m: Message):
@@ -113,8 +111,8 @@ async def private_receive_handler(c: Client, m: Message):
             text=msg_text.format(get_name(log_msg), humanbytes(get_media_file_size(m)), online_link, stream_link),
             quote=True,
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🎥 Pʟᴀʏ Oɴʟɪɴᴇ", url=stream_link), #Stream Link
-                                                InlineKeyboardButton('🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ', url=online_link)]]) #Download Link
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Stream Link", url=stream_link), #Stream Link
+                                                InlineKeyboardButton('Download Link', url=online_link)]]) #Download Link
         )
     except FloodWait as e:
         print(f"Sleeping for {str(e.x)}s")
@@ -151,8 +149,8 @@ async def channel_receive_handler(bot, broadcast):
             message_id=broadcast.id,
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton("🎥 Pʟᴀʏ Oɴʟɪɴᴇ", url=stream_link),
-                    InlineKeyboardButton('🚀 Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ', url=online_link)] 
+                    [InlineKeyboardButton("Stream Link", url=stream_link),
+                    InlineKeyboardButton('Download Link', url=online_link)] 
                 ]
             )
         )
