@@ -24,7 +24,9 @@ msg_text ="""<b>‣ YᴏᴜƦ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴇᴅ !
 
 🗃️ FꞮʟᴇ Nᴀᴍᴇ : <b>{}</b>
 
-🔘 Fɪʟᴇ Sɪᴢᴇ : {} </b>"""
+🔘 Fɪʟᴇ Sɪᴢᴇ : {}
+
+📝 Note: All Created Links Will Expire After 24 Hours </b>"""
 
 @StreamBot.on_message((filters.regex("login🔑") | filters.command("login")) , group=4)
 async def login_handler(c: Client, m: Message):
