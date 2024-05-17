@@ -37,7 +37,7 @@ else:
 SRT_TXT = """<b>Hɪ {}!,
 I Aᴍ Fɪʟᴇ Tᴏ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ Wɪᴛʜ Cʜᴀɴɴᴇʟ sᴜᴘᴘᴏʀᴛ.
 Sᴇɴᴅ Mᴇ Aɴʏ Fɪʟᴇ Aɴᴅ Gᴇᴛ A Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ Aɴᴅ Sᴛʀᴇᴀᴍᴀʙʟᴇ Lɪɴᴋ.!
-Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ : <a href='https://t.me/Sujan_Bots'>ꜱᴜᴊᴀɴ</a></b>"""
+Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ : <a href='https://t.me/Sujan_Bots'>Sᴜᴊᴀɴ</a></b>"""
 
 @StreamBot.on_message(filters.command("start") & filters.private )
 async def start(b, m):
@@ -45,7 +45,7 @@ async def start(b, m):
         await db.add_user(m.from_user.id)
         await b.send_message(
             Var.NEW_USER_LOG,
-            f"**Nᴇᴡ Usᴇʀ Jᴏɪɴᴇᴅ:** \n\n__Mʏ Nᴇᴡ Fʀɪᴇɴᴅ__ [{m.from_user.first_name}](tg://user?id={m.from_user.id}) __Sᴛᴀʀᴛᴇᴅ Yᴏᴜʀ Bᴏᴛ !!__"
+            f"Nᴇᴡ Uꜱᴇʀ Sᴛᴀʀᴛᴇᴅ Tʜᴇ Bᴏᴛ : \n\n Name : [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n User Id : {m.from_user.id}\n\n By @Sujan_BotZ"
         )
     if Var.UPDATES_CHANNEL != "None":
         try:
@@ -99,7 +99,7 @@ async def help_cd(b, m):
         await db.add_user(m.from_user.id)
         await b.send_message(
             Var.NEW_USER_LOG,
-            f"**Nᴇᴡ Usᴇʀ Jᴏɪɴᴇᴅ:** \n\n__Mʏ Nᴇᴡ Fʀɪᴇɴᴅ__ [{m.from_user.first_name}](tg://user?id={m.from_user.id}) __Sᴛᴀʀᴛᴇᴅ Yᴏᴜʀ Bᴏᴛ !!__"
+            f"Nᴇᴡ Uꜱᴇʀ Sᴛᴀʀᴛᴇᴅ Tʜᴇ Bᴏᴛ : \n\n Name : [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n User Id : {m.from_user.id}\n\n By @Sujan_BotZ"
         )
     if Var.UPDATES_CHANNEL != "None":
         try:
