@@ -173,8 +173,7 @@ async def do_ban(bot ,  message):
 )
     else:
         await text.edit(f"<b>Cᴏɴᴛʀᴏʟʟ ʏᴏᴜʀ ᴀɴɢᴇʀ ʙʀᴏ...\n<code>{userid}</code> ɪs ᴀʟʀᴇᴀᴅʏ ʙᴀɴɴᴇᴅ !!</b>")
-     return
-
+    return
 @StreamBot.on_message(filters.command('unban') & filters.user(Var.OWNER_ID))
 async def do_unban(bot ,  message):
     userid = message.text.split(" ", 2)[1] if len(message.text.split(" ", 1)) > 1 else None
