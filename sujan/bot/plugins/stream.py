@@ -108,8 +108,8 @@ async def private_receive_handler(c: Client, m: Message):
         return await m.reply(Var.BAN_ALERT)
     try:
         log_msg = await m.copy(chat_id=Var.BIN_CHANNEL)
-        stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-        online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+        stream_link = f"{Var.URL}watch/{str(log_msg.id)}?hash={get_hash(log_msg)}"
+        online_link = f"{Var.URL}{str(log_msg.id)}?hash={get_hash(log_msg)}"
 
         await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}`\n<b>Download ʟɪɴᴋ</b>: {online_link}", disable_web_page_preview=True,  quote=True)
         await m.reply_text(
@@ -144,8 +144,8 @@ async def channel_receive_handler(bot, broadcast):
         return
     try:
         log_msg = await broadcast.copy(chat_id=Var.BIN_CHANNEL)
-        stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
-        online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
+        stream_link = f"{Var.URL}watch/{str(log_msg.id)}?hash={get_hash(log_msg)}"
+        online_link = f"{Var.URL}{str(log_msg.id)}?hash={get_hash(log_msg)}"
         await log_msg.reply_text(
             text=f"**Channel Name:** `{broadcast.chat.title}`\n**Channel Id:** `{broadcast.chat.id}`\n**Stream ʟɪɴᴋ:** {stream_link}`\n<b>Download ʟɪɴᴋ</b>: {online_link}",
             quote=True
