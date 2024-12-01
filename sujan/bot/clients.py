@@ -8,17 +8,10 @@ from . import multi_clients, work_loads, StreamBot
 
 
 async def initialize_clients():
-    all_tokens = dict(
-        (c + 1, t)
-        for c, (_, t) in enumerate(
-            filter(
-                lambda n: n[0].startswith("MULTI_TOKEN"), sorted(environ.items())
-            )
-        )
-    )
+    multi_clients[0] = StreamBot
+    work_loads[0] = 0
+    all_tokens = TokenParser().parse_from_env()
     if not all_tokens:
-        multi_clients[0] = StreamBot
-        work_loads[0] = 0
         print("No additional clients found, using default client")
         return
     
