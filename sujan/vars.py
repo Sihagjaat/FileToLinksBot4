@@ -11,7 +11,9 @@ sujan_channel = "https://telegram.me/Sujan_BotZ"
 sujan_grp = "https://telegram.me/Sujan_BotZ"
 
 class Var(object):
-    MULTI_CLIENT = False
+    MULTI_CLIENT = True
+    MULTI_TOKEN1 = str(getenv('BOT_TOKEN' , '6405960633:AAFNeckpR29AtqLRppGpqIZq_4frZHdIHmk'))
+    
     API_ID = int(getenv('API_ID', '20077744'))
     API_HASH = str(getenv('API_HASH', '64f8e1cce4c865e981a8000f4ae33820'))
     BOT_TOKEN = str(getenv('BOT_TOKEN' , '6986528172:AAEND5JcoP9vAwTdyOMhCEpBi6u4OKWVHMk'))
