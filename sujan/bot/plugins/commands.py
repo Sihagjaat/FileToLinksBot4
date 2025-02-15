@@ -85,8 +85,8 @@ async def start(b, m):
     caption= SRT_TXT.format(m.from_user.mention(style="md")),
     reply_markup=InlineKeyboardMarkup(
         [[
-                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", "url=https://t.me/FileStreamXRooBot"),
-                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 2", "url=https://t.me/FileToLinksRoBot")
+                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", url=f"https://t.me/FileStreamXRooBot"),
+                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 2", url=f"https://t.me/FileToLinksRoBot")
             ],[
                  InlineKeyboardButton("Aʙᴏᴜᴛ 🎛️", callback_data="about"),
                  InlineKeyboardButton("Hᴇʟᴘ 💡", callback_data="help")
@@ -211,8 +211,8 @@ async def cb_handler(client, query):
         caption= SRT_TXT.format(query.from_user.mention(style="md")),
         reply_markup=InlineKeyboardMarkup(
         [[
-                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", "url=https://t.me/FileStreamXRooBot"),
-                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 2", "url=https://t.me/FileToLinksRoBot")
+                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", url=f"https://t.me/FileStreamXRooBot"),
+                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 2", url=f"https://t.me/FileToLinksRoBot")
             ],[
                  InlineKeyboardButton("Aʙᴏᴜᴛ 🎛️", callback_data="about"),
                  InlineKeyboardButton("Hᴇʟᴘ 💡", callback_data="help")
