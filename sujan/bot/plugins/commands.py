@@ -85,8 +85,9 @@ async def start(b, m):
     caption= SRT_TXT.format(m.from_user.mention(style="md")),
     reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 📯", url=sujan_channel)],
-            [
+            [InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", "url=https://t.me/FileStreamXRooBot")
+            ],[InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 2", "url=https://t.me/FileToLinksRoBot")
+            ],[
                  InlineKeyboardButton("ᴀʙᴏᴜᴛ 🎛️", callback_data="about"),
                  InlineKeyboardButton("ʜᴇʟᴘ 💡", callback_data="help")
             ]
@@ -209,9 +210,9 @@ async def cb_handler(client, query):
         await query.message.edit_caption(
         caption= SRT_TXT.format(query.from_user.mention(style="md")),
         reply_markup=InlineKeyboardMarkup(
-                [
-            [InlineKeyboardButton("Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ 📯", url=sujan_channel)],
-            [
+                [[InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", url=https://t.me/FileStreamXRooBot)
+            ],[InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 2", url=https://t.me/FileToLinksRoBot)
+            ],[
                  InlineKeyboardButton("Aʙᴏᴜᴛ 🎛️", callback_data="about"),
                  InlineKeyboardButton("Hᴇʟᴘ 💡", callback_data="help")
             ]
@@ -221,7 +222,7 @@ async def cb_handler(client, query):
 
     elif data == "about":
         await query.message.edit_caption(
-            caption=f"<b>Mʏ Nᴀᴍᴇ :<a href='https://t.me/TG_FileToLinkXbot'>{bot_name}</a>\nOᴡɴᴇʀ : <a href='https://t.me/Sujan_Bots'>ꜱᴜᴊᴀɴ</a>\nHᴏsᴛᴇᴅ ᴏɴ : Hᴇʀᴏᴋᴜ\nᴅᴀᴛᴀʙᴀsᴇ : Mᴏɴɢᴏ ᴅʙ\nLᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 3</b>",
+            caption=f"<b>Mʏ Nᴀᴍᴇ :<a href='https://t.me/FileToLinksRoBot'>{bot_name}</a>\nOᴡɴᴇʀ : <a href='https://t.me/Sujan_Bots'>ꜱᴜᴊᴀɴ</a>\nHᴏsᴛᴇᴅ ᴏɴ : Hᴇʀᴏᴋᴜ\nᴅᴀᴛᴀʙᴀsᴇ : Mᴏɴɢᴏ ᴅʙ\nLᴀɴɢᴜᴀɢᴇ : ᴘʏᴛʜᴏɴ 3</b>",
             reply_markup=InlineKeyboardMarkup(
                 [[ 
                      InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="start"),
