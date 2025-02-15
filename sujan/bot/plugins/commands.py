@@ -84,9 +84,10 @@ async def start(b, m):
     photo="https://graph.org/file/d1aa884d79172a1f5587c.jpg",
     caption= SRT_TXT.format(m.from_user.mention(style="md")),
     reply_markup=InlineKeyboardMarkup(
-        [
-            [InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", "url=https://t.me/FileStreamXRooBot")
-            ],[InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 2", "url=https://t.me/FileToLinksRoBot")
+        [[
+                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", "url=https://t.me/FileStreamXRooBot")
+            ],[
+                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 2", "url=https://t.me/FileToLinksRoBot")
             ],[
                  InlineKeyboardButton("ᴀʙᴏᴜᴛ 🎛️", callback_data="about"),
                  InlineKeyboardButton("ʜᴇʟᴘ 💡", callback_data="help")
@@ -210,11 +211,13 @@ async def cb_handler(client, query):
         await query.message.edit_caption(
         caption= SRT_TXT.format(query.from_user.mention(style="md")),
         reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", url=https://t.me/FileStreamXRooBot)
-            ],[InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 2", url=https://t.me/FileToLinksRoBot)
+        [[
+                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", "url=https://t.me/FileStreamXRooBot")
             ],[
-                 InlineKeyboardButton("Aʙᴏᴜᴛ 🎛️", callback_data="about"),
-                 InlineKeyboardButton("Hᴇʟᴘ 💡", callback_data="help")
+                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 2", "url=https://t.me/FileToLinksRoBot")
+            ],[
+                 InlineKeyboardButton("ᴀʙᴏᴜᴛ 🎛️", callback_data="about"),
+                 InlineKeyboardButton("ʜᴇʟᴘ 💡", callback_data="help")
             ]
         ]
             )
