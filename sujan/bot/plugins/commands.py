@@ -75,7 +75,7 @@ async def start(b, m):
         except Exception:
             await b.send_message(
                 chat_id=m.chat.id,
-                text="<b>sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ᴘʟᴇᴀsᴇ <a href='https://t.me/Sujan_Bots'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>",
+                text="<b>sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ᴘʟᴇᴀsᴇ <a href='https://t.me/Sujan_Ch'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>",
                 
                 disable_web_page_preview=True)
             return
