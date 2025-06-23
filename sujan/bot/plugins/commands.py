@@ -37,7 +37,7 @@ else:
 SRT_TXT = """<b>Hɪ {}!,
 I Aᴍ Fɪʟᴇ Tᴏ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ Wɪᴛʜ Cʜᴀɴɴᴇʟ sᴜᴘᴘᴏʀᴛ.
 Sᴇɴᴅ Mᴇ Aɴʏ Fɪʟᴇ Aɴᴅ Gᴇᴛ A Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ Aɴᴅ Sᴛʀᴇᴀᴍᴀʙʟᴇ Lɪɴᴋ.!
-Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ : <a href='https://t.me/Sujan_Bots'>Sᴜᴊᴀɴ</a></b>"""
+Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ : <a href='https://t.me/Sujan_Ch'>Sᴜᴊᴀɴ</a></b>"""
 
 @StreamBot.on_message(filters.command("start") & filters.private )
 async def start(b, m):
@@ -85,7 +85,7 @@ async def start(b, m):
     caption= SRT_TXT.format(m.from_user.mention(style="md")),
     reply_markup=InlineKeyboardMarkup(
         [[
-                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", url=f"https://t.me/FileStreamXRooBot"),
+                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", url=f"https://t.me/filetolinksroxbot"),
                  InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 2", url=f"https://t.me/FileToLinksRoBot")
             ],[
                  InlineKeyboardButton("Aʙᴏᴜᴛ 🎛️", callback_data="about"),
@@ -211,7 +211,7 @@ async def cb_handler(client, query):
         caption= SRT_TXT.format(query.from_user.mention(style="md")),
         reply_markup=InlineKeyboardMarkup(
         [[
-                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", url=f"https://t.me/FileStreamXRooBot"),
+                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", url=f"https://t.me/filetolinksroxbot"),
                  InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 2", url=f"https://t.me/FileToLinksRoBot")
             ],[
                  InlineKeyboardButton("Aʙᴏᴜᴛ 🎛️", callback_data="about"),
@@ -244,7 +244,7 @@ async def cb_handler(client, query):
     elif data == "aboutDev":
         # please don't steal credit
         await query.message.edit_caption(
-            caption=f"<b>Hɪ Dᴇᴀʀ...\nɪ'ᴍ <a href='https://t.me/Sujan_Bots'>ꜱᴜᴊᴀɴ</a>\nɪ Aᴍ Tʜᴇ Aᴅᴍɪɴ Oғ Tʜɪs Bᴏᴛ..Aɴᴅ ɪ Mᴀᴅᴇ Tʜᴇ Bᴏᴛ Bʏ Hᴇʟᴘ Oғ <a href='https://github.com/adarsh-goel'>Aᴅᴀʀsʜ Bʀᴏ</a>",
+            caption=f"<b>Hɪ Dᴇᴀʀ...\nɪ'ᴍ <a href='https://t.me/Sujan_Ch'>ꜱᴜᴊᴀɴ</a>\nɪ Aᴍ Tʜᴇ Aᴅᴍɪɴ Oғ Tʜɪs Bᴏᴛ..Aɴᴅ ɪ Mᴀᴅᴇ Tʜᴇ Bᴏᴛ Bʏ Hᴇʟᴘ Oғ <a href='https://github.com/adarsh-goel'>Aᴅᴀʀsʜ Bʀᴏ</a>",
             reply_markup=InlineKeyboardMarkup(
                 [[ 
                      InlineKeyboardButton("ʜᴏᴍᴇ", callback_data="start"),
