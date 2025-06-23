@@ -60,7 +60,7 @@ async def start(b, m):
         except UserNotParticipant:
              await StreamBot.send_photo(
                 chat_id=m.chat.id,
-                photo="https://graph.org/file/5ef57116d62683f872a8c.jpg",
+                photo="https://envs.sh/hu0.jpg",
                 caption=""""<b>Hᴇʏ Tʜᴇʀᴇ!\n\nPʟᴇᴀsᴇ ᴊᴏɪɴ Oᴜʀ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ Tᴏ Usᴇ Mᴇ ! 😊\n\nDᴜᴇ Tᴏ Sᴇʀᴠᴇʀ Oᴠᴇʀʟᴏᴀᴅ, Oɴʟʏ Oᴜʀ Cʜᴀɴɴᴇʟ Sᴜʙsᴄʀɪʙᴇʀs Cᴀɴ Usᴇ Tʜɪs Bᴏᴛ !</b>""",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -115,7 +115,7 @@ async def help_cd(b, m):
         except UserNotParticipant:
              await StreamBot.send_photo(
                 chat_id=m.chat.id,
-                photo="https://graph.org/file/5ef57116d62683f872a8c.jpg",
+                photo="https://envs.sh/hu0.jpg",
                 caption=""""<b>Hᴇʏ Tʜᴇʀᴇ!\n\nPʟᴇᴀsᴇ Jᴏɪɴ Oᴜʀ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ Tᴏ Usᴇ Mᴇ ! 😊\n\nDᴜᴇ To Sᴇʀᴠᴇʀ Oᴠᴇʀʟᴏᴀᴅ, Oɴʟʏ Oᴜʀ Cʜᴀɴɴᴇʟ Sᴜʙsᴄʀɪʙᴇʀs Cᴀɴ Usᴇ Tʜɪs Bᴏᴛ !</b>""",
                 reply_markup=InlineKeyboardMarkup(
                     [
@@ -136,7 +136,7 @@ async def help_cd(b, m):
             return
     await StreamBot.send_photo(
     chat_id=m.chat.id,
-    photo="https://graph.org/file/d1aa884d79172a1f5587c.jpg",
+    photo="https://envs.sh/hu0.jpg",
     caption=f"<b>Wᴇ Dᴏɴ'ᴛ Nᴇᴇᴅ Mᴀɴʏ <a href='https://t.me/Sujan_BotZ'>ᴄᴏᴍᴍᴀɴᴅs</a> Tᴏ Usᴇ Tʜɪs Bᴏᴛ 🤩.\n\nJᴜsᴛ Sᴇɴᴅ Mᴇ Vɪᴅᴇᴏ Fɪʟᴇs Aɴᴅ ɪ Wɪʟʟ Gɪᴠᴇ Yᴏᴜ Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ & Sᴛʀᴇᴀᴍᴀʙʟᴇ Lɪɴᴋ.\n\nOʀ Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Iɴ Yᴏᴜʀ Cʜᴀɴɴᴇʟ.\n\nJᴜsᴛ Aᴅᴅ Mᴇ Aɴᴅ Mᴀᴋᴇ Mᴇ Aᴅᴍɪɴ Aɴᴅ Sᴇᴇ Mʏ Mᴀɢɪᴄ 🪄</b>",
     reply_markup=InlineKeyboardMarkup(
         [
