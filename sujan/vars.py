@@ -43,4 +43,5 @@ class Var(object):
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'Sujan_Ch')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1002116090653")).split()))   
     BAN_CHNL = list(set(int(x) for x in str(getenv("BAN_CHNL", "-1002116090653")).split()))
-    BAN_ALERT = str(getenv('BAN_ALERT' , '<b>Yᴏᴜʀ Aʀᴇ Bᴀɴɴᴇᴅ Tᴏ Usᴇ Tʜɪs Bᴏᴛ.Pʟᴇᴀsᴇ Cᴏɴᴛᴀᴄᴛ @Sujan_Bots Tᴏ Rᴇsᴏʟᴠᴇ Tʜᴇ Issᴜᴇ!!</b>'))
+    BAN_ALERT = str(getenv('BAN_ALERT' , '<b>Yᴏᴜʀ Aʀᴇ Bᴀɴɴᴇᴅ Tᴏ Usᴇ Tʜɪs Bᴏᴛ.Pʟᴇᴀsᴇ Cᴏɴᴛᴀᴄᴛ @Sujan_Ch Tᴏ Rᴇsᴏʟᴠᴇ Tʜᴇ Issᴜᴇ!!</b>'))
+
