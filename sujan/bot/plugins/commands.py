@@ -34,7 +34,7 @@ else:
         )
 
 
-SRT_TXT = """<b>Hey {}!,
+SRT_TXT = """<b>Hey {},
 
 I Am File To Link Generator Bot With Channel Support.
 
@@ -119,8 +119,8 @@ async def help_cd(b, m):
         except UserNotParticipant:
              await StreamBot.send_photo(
                 chat_id=m.chat.id,
-                photo="https://graph.org/file/09ffef1beb9aa301581fb-c026ea1b400277dadd.jpg",
-                caption=""""<b>Hᴇʏ Tʜᴇʀᴇ!\n\nPʟᴇᴀsᴇ Jᴏɪɴ Oᴜʀ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ Tᴏ Usᴇ Mᴇ ! 😊\n\nDᴜᴇ To Sᴇʀᴠᴇʀ Oᴠᴇʀʟᴏᴀᴅ, Oɴʟʏ Oᴜʀ Cʜᴀɴɴᴇʟ Sᴜʙsᴄʀɪʙᴇʀs Cᴀɴ Usᴇ Tʜɪs Bᴏᴛ !</b>""",
+                photo="https://graph.org/file/721cd57c154c7f2a2b992-2bb665f9732ff027af.jpg",
+                caption=""""<b>Hello Dear!\n\nYou Need To Join In My Channel To Use Me ! 😊\n\nKindly Please Join Channel!</b>""",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -140,7 +140,7 @@ async def help_cd(b, m):
             return
     await StreamBot.send_photo(
     chat_id=m.chat.id,
-    photo="https://graph.org/file/09ffef1beb9aa301581fb-c026ea1b400277dadd.jpg",
+    photo="https://graph.org/file/366530995fd47a006743e-4b4d613a61e1feb9ce.jpg",
     caption=f"<b>Wᴇ Dᴏɴ'ᴛ Nᴇᴇᴅ Mᴀɴʏ <a href='https://t.me/Sujan_BotZ'>ᴄᴏᴍᴍᴀɴᴅs</a> Tᴏ Usᴇ Tʜɪs Bᴏᴛ 🤩.\n\nJᴜsᴛ Sᴇɴᴅ Mᴇ Vɪᴅᴇᴏ Fɪʟᴇs Aɴᴅ ɪ Wɪʟʟ Gɪᴠᴇ Yᴏᴜ Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ & Sᴛʀᴇᴀᴍᴀʙʟᴇ Lɪɴᴋ.\n\nOʀ Yᴏᴜ Cᴀɴ Usᴇ Mᴇ Iɴ Yᴏᴜʀ Cʜᴀɴɴᴇʟ.\n\nJᴜsᴛ Aᴅᴅ Mᴇ Aɴᴅ Mᴀᴋᴇ Mᴇ Aᴅᴍɪɴ Aɴᴅ Sᴇᴇ Mʏ Mᴀɢɪᴄ 🪄</b>",
     reply_markup=InlineKeyboardMarkup(
         [
@@ -289,4 +289,5 @@ async def cb_handler(client, query):
         user_id =(data.split("_")[1])
         user_id = int(user_id.replace(' ' , ''))
         await query.message.edit(f"Tʜᴇ ᴜɴʙᴀɴ ᴏɴ <code>{user_id}</code> ᴡᴀs ᴇxᴇᴄᴜᴛᴇᴅ sɪʟᴇɴᴛʟʏ.")
+
 
