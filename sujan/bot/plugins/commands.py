@@ -80,7 +80,7 @@ async def start(b, m):
         except Exception:
             await b.send_message(
                 chat_id=m.chat.id,
-                text="<b>sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ᴘʟᴇᴀsᴇ <a href='https://t.me/Sujan_Ch'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>",
+                text="<b>Bᴏᴛ Iꜱ Uɴᴅᴇʀ Mᴀɪɴᴛᴇɴᴀɴᴄᴇ, Sᴏ Pʟᴇᴀꜱᴇ Uꜱᴇ Tʜɪꜱ Bᴏᴛ <a href='https://t.me/FileStreamXProoBot'>@Fɪʟᴇ Tᴏ Lɪɴᴋꜱ Bᴏᴛ 2</a></b>",
                 
                 disable_web_page_preview=True)
             return
@@ -134,7 +134,7 @@ async def help_cd(b, m):
         except Exception:
             await b.send_message(
                 chat_id=m.chat.id,
-                text="<b>sᴏᴍᴇᴛʜɪɴɢ ᴡᴇɴᴛ ᴡʀᴏɴɢ.ᴘʟᴇᴀsᴇ <a href='https://t.me/Sujan_Ch'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>",
+                text="<b>Bᴏᴛ Iꜱ Uɴᴅᴇʀ Mᴀɪɴᴛᴇɴᴀɴᴄᴇ, Sᴏ Pʟᴇᴀꜱᴇ Uꜱᴇ Tʜɪꜱ Bᴏᴛ <a href='https://t.me/FileStreamXProoBot'>@Fɪʟᴇ Tᴏ Lɪɴᴋꜱ Bᴏᴛ 2</a></b>",
                 
                 disable_web_page_preview=True)
             return
@@ -289,5 +289,6 @@ async def cb_handler(client, query):
         user_id =(data.split("_")[1])
         user_id = int(user_id.replace(' ' , ''))
         await query.message.edit(f"Tʜᴇ ᴜɴʙᴀɴ ᴏɴ <code>{user_id}</code> ᴡᴀs ᴇxᴇᴄᴜᴛᴇᴅ sɪʟᴇɴᴛʟʏ.")
+
 
 
