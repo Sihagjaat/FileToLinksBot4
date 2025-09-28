@@ -34,10 +34,15 @@ else:
         )
 
 
-SRT_TXT = """<b>Hɪ {}!,
-I Aᴍ Fɪʟᴇ Tᴏ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴏʀ Bᴏᴛ Wɪᴛʜ Cʜᴀɴɴᴇʟ sᴜᴘᴘᴏʀᴛ.
-Sᴇɴᴅ Mᴇ Aɴʏ Fɪʟᴇ Aɴᴅ Gᴇᴛ A Dɪʀᴇᴄᴛ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ Aɴᴅ Sᴛʀᴇᴀᴍᴀʙʟᴇ Lɪɴᴋ.!
-Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ : <a href='https://t.me/Sujan_Ch'>Sᴜᴊᴀɴ</a></b>"""
+SRT_TXT = """<b>Hey {}!,
+
+I Am File To Link Generator Bot With Channel Support.
+
+Send Me Any File And Get A Direct Download Link And Streaming Link. 
+
+Warning : Generating Link Of Adult Content Is Strictly Prohibited. If You Will Do, You Will Get Permanent Ban. 
+
+Bot Is Made By @Sujan_Ch</b>"""
 
 @StreamBot.on_message(filters.command("start") & filters.private )
 async def start(b, m):
@@ -60,8 +65,8 @@ async def start(b, m):
         except UserNotParticipant:
              await StreamBot.send_photo(
                 chat_id=m.chat.id,
-                photo="https://graph.org/file/09ffef1beb9aa301581fb-c026ea1b400277dadd.jpg",
-                caption=""""<b>Hᴇʏ Tʜᴇʀᴇ!\n\nPʟᴇᴀsᴇ ᴊᴏɪɴ Oᴜʀ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ Tᴏ Usᴇ Mᴇ ! 😊\n\nDᴜᴇ Tᴏ Sᴇʀᴠᴇʀ Oᴠᴇʀʟᴏᴀᴅ, Oɴʟʏ Oᴜʀ Cʜᴀɴɴᴇʟ Sᴜʙsᴄʀɪʙᴇʀs Cᴀɴ Usᴇ Tʜɪs Bᴏᴛ !</b>""",
+                photo="https://graph.org/file/721cd57c154c7f2a2b992-2bb665f9732ff027af.jpg",
+                caption=""""<b>Hello Dear!\n\nYou Need To Join In My Channel To Use Me ! 😊\n\nKindly Please Join Channel!</b>""",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -81,12 +86,11 @@ async def start(b, m):
             return
     await StreamBot.send_photo(
     chat_id=m.chat.id,
-    photo="https://graph.org/file/d1aa884d79172a1f5587c.jpg",
+    photo="https://graph.org/file/366530995fd47a006743e-4b4d613a61e1feb9ce.jpg",
     caption= SRT_TXT.format(m.from_user.mention(style="md")),
     reply_markup=InlineKeyboardMarkup(
         [[
-                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", url=f"https://t.me/filetolinksroxbot"),
-                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 2", url=f"https://t.me/FileToLinksRoBot")
+                 InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 2", url=f"https://t.me/FileStreamXProoBot")
             ],[
                  InlineKeyboardButton("Aʙᴏᴜᴛ 🎛️", callback_data="about"),
                  InlineKeyboardButton("Hᴇʟᴘ 💡", callback_data="help")
@@ -211,8 +215,7 @@ async def cb_handler(client, query):
         caption= SRT_TXT.format(query.from_user.mention(style="md")),
         reply_markup=InlineKeyboardMarkup(
         [[
-                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 1", url=f"https://t.me/filetolinksroxbot"),
-                 InlineKeyboardButton("Fɪʟᴇ Sᴛʀᴇᴀᴍ 2", url=f"https://t.me/FileToLinksRoBot")
+                 InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 2", url=f"https://t.me/FileStreamXProoBot")
             ],[
                  InlineKeyboardButton("Aʙᴏᴜᴛ 🎛️", callback_data="about"),
                  InlineKeyboardButton("Hᴇʟᴘ 💡", callback_data="help")
@@ -286,3 +289,4 @@ async def cb_handler(client, query):
         user_id =(data.split("_")[1])
         user_id = int(user_id.replace(' ' , ''))
         await query.message.edit(f"Tʜᴇ ᴜɴʙᴀɴ ᴏɴ <code>{user_id}</code> ᴡᴀs ᴇxᴇᴄᴜᴛᴇᴅ sɪʟᴇɴᴛʟʏ.")
+
