@@ -221,7 +221,26 @@
 <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
 <script src="https://aeditx03.github.io/resources/StreamJs.js"></script>
 
+<!-- ✅ Added working player functions -->
+<script>
+    const fileUrl = "{{file_url}}";
+
+    function vlc_player() {
+        window.location.href = "vlc://" + fileUrl;
+    }
+
+    function mx_player() {
+        const mxUrl = "intent:" + fileUrl + "#Intent;package=com.mxtech.videoplayer.ad;end";
+        const mxProUrl = "intent:" + fileUrl + "#Intent;package=com.mxtech.videoplayer.pro;end";
+        window.location.href = mxUrl;
+        setTimeout(() => {
+            window.location.href = mxProUrl;
+        }, 1000);
+    }
+</script>
+
 </html>
 
 <!-- this code is written by Someone Else?  -->
 <!-- stealing credit doesn't make you developer..so try to give full credit to the developer 😊 u will not loose anything for giving proper credit.instead  -->
+
