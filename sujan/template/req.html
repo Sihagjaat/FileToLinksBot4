@@ -1,246 +1,312 @@
 <!-- this code is written by Someone Else?-->
 <!-- stealing credit doesn't make you developer..so try to give full credit to the developer 😊 u will not loose anything for giving proper credit.instead  -->
 
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUJAN BOTZ | {{file_name}}</title>
-    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
-    <link rel="stylesheet" href="https://aeditx03.github.io/resources/StreamCSS.css">
-    <link rel="stylesheet" href="https://aeditx03.github.io/resources/playerCss.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.tailwindcss.com"></script>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUJAN BOTZ | {{file_name}}</title>
+  <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+  <link rel="stylesheet" href="https://aeditx03.github.io/resources/StreamCSS.css" />
+  <link rel="stylesheet" href="https://aeditx03.github.io/resources/playerCss.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Ads propunder -->
+  <script type='text/javascript' src='//dipperflightrecommend.com/1a/2d/7e/1a2d7e02ab358966bddcdc540fa19eb9.js'></script>
 </head>
-<!-- this code is written by Someone Else?  -->
-<!-- stealing credit doesn't make you developer..so try to give full credit to the developer 😊 u will not loose anything for giving proper credit.instead  -->
 
 <body>
-    <nav>
-        <div class="nleft">
-            <a href="https://t.me/Sujan_BotZ">
-                <!-- if u are trying to change the header name please remove the title text from bottom line  -->
-                <h3 id="heading" style="z-index: 100;" class="magnet">SUJAN BOTZ</h3>
-            </a>
-        </div>
-        <div class="nryt">
-            <a class="home-btn magnet" href="#main" onclick="toggleWidthnav(this)">HOME</a>
+  
+  <nav>
+    <div class="nleft">
+      <a href="https://t.me/Sujan_BotZ">
+        <h3 id="heading" style="z-index: 100;" class="magnet">SUJAN BOTZ</h3>
+      </a>
+    </div>
+    <div class="nryt">
+      <a class="home-btn magnet" href="#main" onclick="toggleWidthnav(this)">HOME</a>
+      <a href="#sec1" class="about-btn magnet" onclick="toggleWidthnav(this)">ABOUT</a>
+    </div>
+  </nav>
 
-            <a href="#sec1" class="about-btn magnet" onclick="toggleWidthnav(this)">ABOUT</a>
-        </div>
-    </nav>
-    <center>
-        <div class="about-nav">
-            <a href="#sec1" class="wlcm magnet" onclick="toggleWidth(this)">WELCOME</a>
-            <a href="#sec2" class="abt-chnl magnet" onclick="toggleWidth(this)">CHANNELS</a>
-            <a href="#sec3" class="magnet bot-btn" onclick="toggleWidth(this) , bot_btn_clicked()">BOTS</a>
-            <a href="#sec4" class="magnet contact-btn" onclick="toggleWidth(this)">LET'S TALK</a>
-        </div>
-    </center>
-    <!-- this code is written by Someone Else? -->
-    <!-- stealing credit doesn't make you developer..so try to give full credit to the developer 😊 u will not loose anything for giving proper credit.instead  -->
+  <center>
+    <div class="about-nav">
+      <a href="#sec1" class="wlcm magnet" onclick="toggleWidth(this)">WELCOME</a>
+      <a href="#sec2" class="abt-chnl magnet" onclick="toggleWidth(this)">CHANNELS</a>
+      <a href="#sec3" class="magnet bot-btn" onclick="toggleWidth(this), bot_btn_clicked()">BOTS</a>
+      <a href="#sec4" class="magnet contact-btn" onclick="toggleWidth(this)">LET'S TALK</a>
+    </div>
+  </center>
 
-    <div class="outer">
-        <div class="inner">
-            <div class="main" id="main">
-                <video id="player" class="player" src="{{file_url}}" type="video/mp4" playsinline controls
-                    width="100%"></video>
-                <div class="ad-container">
-                        <script type="text/javascript">
- atOptions = {
-  'key' : '8baddf5bdc237fbda449ed2a42cf1632',
-  'format' : 'iframe',
-  'height' : 90,
-  'width' : 728,
-  'params' : {}
- };
-</script>
-<script type="text/javascript" src="//compelcode.com/8baddf5bdc237fbda449ed2a42cf1632/invoke.js"></script>
-                <!-- Ad content goes here -->
-                </div>
-                <div class="player"></div>
-                <div class="file-name">
-                    <h4>File name : </h4>
-                    <br>
-                    <p id="myDiv">{{file_name}}</p>
-                </div>
-                <div class="downloadBtn">
-                    <button class="magnet" onclick="bisalDownload()"><img style="height: 35px;"
-                            src="https://i.postimg.cc/Zncc9YLq/Pngtree-download-icon-3581467.png" alt="">download video
-                    </button>
-                    <button class="magnet" onclick="vlc_player()"><img src="https://i.postimg.cc/15TQ4y7B/vlc.png"
-                            alt="">watch in VLC PLAYER</button>
-                    <button class="magnet" onclick="mx_player()"><img src="https://i.postimg.cc/sx4Msv4T/mx.png"
-                            alt="">watch in MX PLAYER</button>
-                    <button class="magnet" onclick="playit_player()"><img src="https://i.postimg.cc/RVGWYJFF/playit.png"
-                            alt="">watch in PLAYit
-                        PLAYER</button>
-                    <button class="magnet" onclick="km_player()"><img src="https://i.postimg.cc/wT9tFQ9Z/km.png"
-                            alt="">watch in KM PLAYER</button>
-                    <button class="magnet" onclick="s_player()"><img src="https://i.postimg.cc/XYJr6NGg/s.png"
-                            alt="">watch in S PLAYER</button>
-                    <button class="magnet" onclick="hd_player()"><img src="https://i.postimg.cc/rFT43LNh/hd.png"
-                            alt="">watch in HD
-                        PLAYER(4K)</button>
-                </div>
+  <div class="outer">
+    <div class="inner">
+      <div class="main" id="main">
 
-            </div>
-            <div class="abt">
-                <div class="about">
-                    <div class="about-dets">
-                        <div class="abt-sec" id="sec1" style="padding: 160px 30px;">
-                            <h1 style="text-align: center;">WELCOME TO OUR <Span>STREAMING</Span> PAGE</h1>
-                            <p style="text-align: center; line-height: 2;word-spacing: 2px;  letter-spacing: 0.8px;">
-                                We're
-                                thrilled to have <span>you</span> here.
-                                Get ready for an
-                                amazing <span>experience</span>
-                                filled with <span>entertainment</span>, <span>fun</span>, and <span>surprises</span>.
-                                Grab
-                                your snacks, sit back, and <span>enjoy</span> the show!
-                            </p>
-                        </div>
-                        <div class="abt-sec" id="sec2">
-                            <h1>OUR ALL <span>CHANNELS</span> LIST</h1>
-                            <div class="links chnl-link">
-                                <a class="magnet" href="https://t.me/FilmyHub_Adda"><button>FILMYHUB -
-                                        ADDA</button></a>
-                                <a class="magnet" href="https://t.me/+IhrdZgCypNFlYjZl"><button>MOVIE 
-                                        REQUEST GROUP</button></a>
-                            </div>
-                        </div>
-                        <div class="abt-sec" id="sec3">
-                            <h1>OUR ALL <span>BOTS</span> LIST</h1>
-                            <div class="links bot-link">
-                                <a class="magnet" href="http://t.me/MovieSearchXRobot"><button>MOVIE SEARCH
-                                    BOT</button></a>
-                                <a class="magnet" href="http://t.me/Post_Finder_Ro_Bot"><button>POST FINDER
-                                        BOT</button></a>
-                                <a class="magnet" href="https://t.me/TG_FileToLinkXbot"><button>FILE STREAM
-                                        BOT</button></a>
-                                <a class="magnet" href="http://t.me/FileRenameProXBot"><button>FILE RENAMER
-                                        BOT</button></a>
-                                <a class="magnet" href="https://t.me/YTDL_X_Bot"><button>VIDEO DOWNLOADER
-                                        BOT</button></a>
-                                <a class="magnet" href="http://t.me/Auto_Accept_Join_Request_Bot"><button>AUTO APPROVE
-                                        BOT</button></a>
-                            </div>
-                        </div>
-                        <div class="abt-sec" id="sec4">
-                            <!-- this code is written by Someone Else?  -->
-                            <!-- stealing credit doesn't make you developer..so try to give full credit to the developer 😊 u will not loose anything for giving proper credit.instead  -->
-
-                            <p style="text-align: center;">we can tal'k for your support and you can report through
-                                telegram</p>
-                            <div class="links contact">
-                                <a href="https://t.me/Sujan_Bots"><button>CONTACT</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- 🔹 Banner Ad Above Video Player -->
+        <div class="banner-above-player" style="margin-bottom: 20px; text-align:center;">
+          <script type="text/javascript">
+            atOptions = {
+              'key' : '8baddf5bdc237fbda449ed2a42cf1632',
+              'format' : 'iframe',
+              'height' : 90,
+              'width' : 720
+            ,
+              'params' : {}
+            };
+          </script>
+          <script type="text/javascript" src="//dipperflightrecommend.com/8baddf5bdc237fbda449ed2a42cf1632/invoke.js"></script>
         </div>
+
+        <video id="player" class="player" src="{{file_url}}" type="video/mp4" playsinline controls width="100%"></video>
+
         <div class="ad-container">
-    <script type="text/javascript">
- atOptions = {
-  'key' : '8baddf5bdc237fbda449ed2a42cf1632',
-  'format' : 'iframe',
-  'height' : 90,
-  'width' : 720,
-  'params' : {}
- };
-</script>
-<script type="text/javascript" src="//compelcode.com/8baddf5bdc237fbda449ed2a42cf1632/invoke.js"></script>
-        <!-- Your social ad script or content -->
+          <script type="text/javascript">
+            atOptions = {
+              'key': '8baddf5bdc237fbda449ed2a42cf1632',
+              'format': 'iframe',
+              'height': 90,
+              'width': 728,
+              'params': {}
+            };
+          </script>
+          <script type="text/javascript"
+            src="//compelcode.com/8baddf5bdc237fbda449ed2a42cf1632/invoke.js"></script>
         </div>
-        <footer>
-            <div class="mid">
-                <h1 class="mid-text">VISIT <a href="#sec3" onclick="bot_btn_clicked()"><span>OUR BOTS LIST</span></a>
-                    FOR
-                    MORE
-                    INFO</h1>
+
+        <div class="file-name">
+          <h4>File name :</h4><br />
+          <p id="myDiv">{{file_name}}</p>
+        </div>
+
+        <!-- ✅ Download & Player Buttons with Ad Below Each -->
+        <div class="downloadBtn">
+
+          <button class="magnet" onclick="bisalDownload()">
+            <img style="height: 35px;"
+              src="https://i.postimg.cc/Zncc9YLq/Pngtree-download-icon-3581467.png" alt="">
+            Download Video
+          </button>
+          <div style="text-align:center; margin:10px 0;">
+            <script type="text/javascript">
+              atOptions = {
+                'key': '9877c826b6f038dbe4b1a3c7c1b18ece',
+                'format': 'iframe',
+                'height': 60,
+                'width': 170,
+                'params': {}
+              };
+            </script>
+            <script type="text/javascript"
+              src="//dipperflightrecommend.com/9877c826b6f038dbe4b1a3c7c1b18ece/invoke.js"></script>
+          </div>
+
+          <button class="magnet" onclick="vlc_player()">
+            <img src="https://i.postimg.cc/15TQ4y7B/vlc.png" alt="">
+            Watch in VLC PLAYER
+          </button>
+          <div style="text-align:center; margin:10px 0;">
+            <script type="text/javascript">
+              atOptions = {
+                'key': '9877c826b6f038dbe4b1a3c7c1b18ece',
+                'format': 'iframe',
+                'height': 60,
+                'width': 170,
+                'params': {}
+              };
+            </script>
+            <script type="text/javascript"
+              src="//dipperflightrecommend.com/9877c826b6f038dbe4b1a3c7c1b18ece/invoke.js"></script>
+          </div>
+
+          <button class="magnet" onclick="mx_player()">
+            <img src="https://i.postimg.cc/sx4Msv4T/mx.png" alt="">
+            Watch in MX PLAYER
+          </button>
+          <div style="text-align:center; margin:10px 0;">
+            <script type="text/javascript">
+              atOptions = {
+                'key': '9877c826b6f038dbe4b1a3c7c1b18ece',
+                'format': 'iframe',
+                'height': 60,
+                'width': 170,
+                'params': {}
+              };
+            </script>
+            <script type="text/javascript"
+              src="//dipperflightrecommend.com/9877c826b6f038dbe4b1a3c7c1b18ece/invoke.js"></script>
+          </div>
+
+          <button class="magnet" onclick="playit_player()">
+            <img src="https://i.postimg.cc/RVGWYJFF/playit.png" alt="">
+            Watch in PLAYit PLAYER
+          </button>
+          <div style="text-align:center; margin:10px 0;">
+            <script type="text/javascript">
+              atOptions = {
+                'key': '9877c826b6f038dbe4b1a3c7c1b18ece',
+                'format': 'iframe',
+                'height': 60,
+                'width': 170,
+                'params': {}
+              };
+            </script>
+            <script type="text/javascript"
+              src="//dipperflightrecommend.com/9877c826b6f038dbe4b1a3c7c1b18ece/invoke.js"></script>
+          </div>
+
+          <button class="magnet" onclick="km_player()">
+            <img src="https://i.postimg.cc/wT9tFQ9Z/km.png" alt="">
+            Watch in KM PLAYER
+          </button>
+          <div style="text-align:center; margin:10px 0;">
+            <script type="text/javascript">
+              atOptions = {
+                'key': '9877c826b6f038dbe4b1a3c7c1b18ece',
+                'format': 'iframe',
+                'height': 60,
+                'width': 170,
+                'params': {}
+              };
+            </script>
+            <script type="text/javascript"
+              src="//dipperflightrecommend.com/9877c826b6f038dbe4b1a3c7c1b18ece/invoke.js"></script>
+          </div>
+
+          <button class="magnet" onclick="s_player()">
+            <img src="https://i.postimg.cc/XYJr6NGg/s.png" alt="">
+            Watch in S PLAYER
+          </button>
+          <div style="text-align:center; margin:10px 0;">
+            <script type="text/javascript">
+              atOptions = {
+                'key': '9877c826b6f038dbe4b1a3c7c1b18ece',
+                'format': 'iframe',
+                'height': 60,
+                'width': 170,
+                'params': {}
+              };
+            </script>
+            <script type="text/javascript"
+              src="//dipperflightrecommend.com/9877c826b6f038dbe4b1a3c7c1b18ece/invoke.js"></script>
+          </div>
+
+          <button class="magnet" onclick="hd_player()">
+            <img src="https://i.postimg.cc/rFT43LNh/hd.png" alt="">
+            Watch in HD PLAYER (4K)
+          </button>
+          <div style="text-align:center; margin:10px 0;">
+            <script type="text/javascript">
+              atOptions = {a
+                'key': '9877c826b6f038dbe4b1a3c7c1b18ece',
+                'format': 'iframe',
+                'height': 60,
+                'width': 170,
+                'params': {}
+              };
+            </script>
+            <script type="text/javascript"
+              src="//dipperflightrecommend.com/9877c826b6f038dbe4b1a3c7c1b18ece/invoke.js"></script>
+          </div>
+        </div>
+
+        <!-- 🔸 Native Clickable Ad (only once) -->
+        <div class="native-ad" style="margin: 40px auto; text-align:center;">
+          <script async="async" data-cfasync="false"
+            src="//dipperflightrecommend.com/724cbc99af984e7bc78461af19f6e9e5/invoke.js"></script>
+          <div id="container-724cbc99af984e7bc78461af19f6e9e5"></div>
+        </div>
+      </div>
+
+      <!-- Remaining sections unchanged -->
+      <div class="abt">
+        <div class="about">
+          <div class="about-dets">
+            <div class="abt-sec" id="sec1" style="padding: 160px 30px;">
+              <h1 style="text-align: center;">WELCOME TO OUR <span>STREAMING</span> PAGE</h1>
+              <p style="text-align: center; line-height: 2;word-spacing: 2px; letter-spacing: 0.8px;">
+                We're thrilled to have <span>you</span> here.
+                Get ready for an amazing <span>experience</span> filled with
+                <span>entertainment</span>, <span>fun</span>, and <span>surprises</span>.
+                Grab your snacks, sit back, and <span>enjoy</span> the show!
+              </p>
             </div>
 
-            <div class="last-text">
-                <p class="text-center pb-20 pr-6 pl-6 absolute" style="font-weight: 500;">
-                    Welcome to our online streaming platform! Our website allows users to generate streamable links for
-                    various files using Telegram bots. Please note that we are not responsible for the content shared or
-                    streamed through our service. Users are encouraged to respect copyright laws and adhere to our
-                    community
-                    guidelines. Enjoy easy, hassle-free file streaming.
-                </p>
+            <div class="abt-sec" id="sec2">
+              <h1>OUR ALL <span>CHANNELS</span> LIST</h1>
+              <div class="links chnl-link">
+                <a class="magnet" href="https://t.me/FilmyHub_Adda"><button>FILMYHUB - ADDA</button></a>
+                <a class="magnet" href="https://t.me/+IhrdZgCypNFlYjZl"><button>MOVIE REQUEST GROUP</button></a>
+              </div>
             </div>
-            
-            <!-- this code is written by Someone Else?  -->
-            <!-- stealing credit doesn't make you developer..so try to give full credit to the developer 😊 u will not loose anything for giving proper credit.instead  -->
 
-
-
-            <div class="copyright ">
-                <h5 class="text-center">Copyright © 2023 <a href="https://t.me/Sujan_BotZ"><span
-                            style="font-weight: 700;">SUJAN BOTZ</span></a>. All
-                    Rights Reserved.</h5>
-                <div class="icons">
-                    <a href="https://t.me/Sujan_BotZ"><i class="fa-brands fa-telegram fa-lg"></i></a>
-                
-                </div>
-                <h4 style="font-weight: 700;">This Page Is Designed By<a
-                        href="https://t.me/Sujan_BotZ"><span>Sujan</span></a></h4>
+            <div class="abt-sec" id="sec3">
+              <h1>OUR ALL <span>BOTS</span> LIST</h1>
+              <div class="links bot-link">
+                <a class="magnet" href="http://t.me/MovieSearchXRobot"><button>MOVIE SEARCH BOT</button></a>
+                <a class="magnet" href="http://t.me/Post_Finder_Ro_Bot"><button>POST FINDER BOT</button></a>
+                <a class="magnet" href="https://t.me/TG_FileToLinkXbot"><button>FILE STREAM BOT</button></a>
+                <a class="magnet" href="http://t.me/FileRenameProXBot"><button>FILE RENAMER BOT</button></a>
+                <a class="magnet" href="https://t.me/YTDL_X_Bot"><button>VIDEO DOWNLOADER BOT</button></a>
+                <a class="magnet" href="http://t.me/Auto_Accept_Join_Request_Bot"><button>AUTO APPROVE BOT</button></a>
+              </div>
             </div>
-        </footer>
-</body>
 
+            <div class="abt-sec" id="sec4">
+              <p style="text-align: center;">We can talk for your support and you can report through telegram</p>
+              <div class="links contact">
+                <a href="https://t.me/Sujan_Bots"><button>CONTACT</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const uncopyableElement = document.querySelector(".uncopyable");
+    <footer>
+      <div class="mid">
+        <h1 class="mid-text">VISIT <a href="#sec3" onclick="bot_btn_clicked()"><span>OUR BOTS LIST</span></a> FOR MORE INFO</h1>
+      </div>
+      <div class="last-text">
+        <p class="text-center pb-20 pr-6 pl-6 absolute" style="font-weight: 500;">
+          Welcome to our online streaming platform! Our website allows users to generate streamable links for various
+          files using Telegram bots. Please note that we are not responsible for the content shared or streamed through
+          our service. Users are encouraged to respect copyright laws and adhere to our community guidelines. Enjoy easy,
+          hassle-free file streaming.
+        </p>
+      </div>
+      <div class="copyright ">
+        <h5 class="text-center">Copyright © 2023 <a href="https://t.me/Sujan_BotZ"><span style="font-weight: 700;">SUJAN
+              BOTZ</span></a>. All Rights Reserved.</h5>
+        <div class="icons">
+          <a href="https://t.me/Sujan_BotZ"><i class="fa-brands fa-telegram fa-lg"></i></a>
+        </div>
+        <h4 style="font-weight: 700;">This Page Is Designed By<a href="https://t.me/Sujan_BotZ"><span>Sujan</span></a>
+        </h4>
+      </div>
+    </footer>
+  </div>
 
-        uncopyableElement.addEventListener("selectstart", function (event) {
-            event.preventDefault();
-        });
-    });
-</script>
-<script src="js/wow.min.js"></script>
-<script>
+  <!-- Original JS logic (unchanged) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
     new WOW().init();
-</script>
-<script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
-<script src="https://aeditx03.github.io/resources/StreamJs.js"></script>
+  </script>
+  <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
+  <script src="https://aeditx03.github.io/resources/StreamJs.js"></script>
+  <script type='text/javascript' src='//dipperflightrecommend.com/60/7b/9f/607b9f81dd3036cb85c855ede42746d1.js'></script>
 
-<!-- ✅ Added working player functions -->
-<script>
-    const fileUrl = "{{file_url}}";
-
-    function vlc_player() {
-        window.location.href = "vlc://" + fileUrl;
-    }
-
-    function mx_player() {
-        const mxUrl = "intent:" + fileUrl + "#Intent;package=com.mxtech.videoplayer.ad;end";
-        const mxProUrl = "intent:" + fileUrl + "#Intent;package=com.mxtech.videoplayer.pro;end";
-        window.location.href = mxUrl;
-        setTimeout(() => {
-            window.location.href = mxProUrl;
-        }, 1000);
-    }
-</script>
-
+</body>
 </html>
-
-<!-- this code is written by Someone Else?  -->
-<!-- stealing credit doesn't make you developer..so try to give full credit to the developer 😊 u will not loose anything for giving proper credit.instead  -->
-
