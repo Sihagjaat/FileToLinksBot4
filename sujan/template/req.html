@@ -8,79 +8,109 @@
   <link rel="icon" href="https://graph.org/file/385b9bb3996af1e20aaa7-e1ad0bd09db7960b44.jpg" type="image/x-icon" />
 
   <style>
+    /* 🌌 Base */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
       min-height: 100vh;
       margin: 0;
-      background-color: #0d1117;
+      background: radial-gradient(circle at top, #0d1117 0%, #000000 90%);
       color: #e6edf3;
       text-align: center;
+      animation: fadeIn 1s ease-in-out;
     }
 
-    /* ✅ Header */
+    /* ⚡ Header */
     header {
       width: 100%;
-      background-color: #00aaff;
+      background: linear-gradient(90deg, #00aaff, #0072ff);
       color: #fff;
       padding: 15px 0;
-      font-weight: bold;
-      font-size: 20px;
-      text-align: center;
+      font-weight: 700;
+      font-size: 22px;
+      text-transform: uppercase;
       letter-spacing: 1px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+      box-shadow: 0 0 20px rgba(0, 162, 255, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    /* 🎬 Video Player */
+    .video-container {
+      position: relative;
+      max-width: 95%;
+      margin: 40px 0 25px;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(0, 162, 255, 0.3), 0 0 60px rgba(0, 162, 255, 0.2);
+      background: #000;
+      transition: all 0.4s ease;
+    }
+
+    .video-container:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 40px rgba(0, 170, 255, 0.5);
     }
 
     video {
-      max-width: 90%;
+      width: 100%;
       height: auto;
-      margin: 25px 0 20px 0;
-      border-radius: 10px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-      background-color: #000;
+      display: block;
+      border: none;
+      outline: none;
+      background: #000;
     }
 
+    /*🔻 Download Button 🔻*/
     .downloadBtn button {
-      background-color: #ffd43b;
+      background: linear-gradient(90deg, #ffd43b, #ffae00);
       color: #000;
       border: none;
-      padding: 12px 20px;
-      font-size: 16px;
-      border-radius: 8px;
+      padding: 14px 26px;
+      font-size: 17px;
+      border-radius: 50px;
       cursor: pointer;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      box-shadow: 0 0 15px rgba(255, 214, 59, 0.4);
       transition: all 0.3s ease;
-      font-weight: bold;
     }
 
     .downloadBtn button:hover {
-      background-color: #ffcc00;
-      transform: scale(1.05);
+      background: linear-gradient(90deg, #ffcc00, #ffaa00);
+      transform: translateY(-3px) scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 214, 59, 0.7);
     }
 
+    /* 🧊 Footer */
     footer {
-      margin-top: 30px;
+      margin-top: 40px;
+      padding: 20px 0;
       font-size: 14px;
       color: #aaa;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      width: 100%;
     }
 
     footer a {
-      color: #58a6ff;
+      color: #00aaff;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease;
     }
 
     footer a:hover {
+      color: #58a6ff;
       text-decoration: underline;
+      text-shadow: 0 0 10px rgba(88, 166, 255, 0.6);
     }
 
-    /* Smooth fade-in animation */
-    body {
-      animation: fadeIn 0.8s ease-in;
-    }
-
+    /* ✨ Floating Glow Animation */
     @keyframes fadeIn {
       from {
         opacity: 0;
@@ -90,24 +120,57 @@
         opacity: 1;
       }
     }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 20px rgba(0, 170, 255, 0.3);
+      }
+
+      50% {
+        box-shadow: 0 0 40px rgba(0, 170, 255, 0.6);
+      }
+
+      100% {
+        box-shadow: 0 0 20px rgba(0, 170, 255, 0.3);
+      }
+    }
+
+    .video-container {
+      animation: pulse 4s infinite ease-in-out;
+    }
+
+    /* 📱 Responsive */
+    @media (max-width: 600px) {
+      header {
+        font-size: 18px;
+        padding: 12px 0;
+      }
+
+      .downloadBtn button {
+        font-size: 15px;
+        padding: 12px 22px;
+      }
+
+      footer {
+        font-size: 13px;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <!-- ✅ Header -->
-  <header>
-    SUJAN BOTZ
-  </header>
+  <header>🎥 SUJAN BOTZ PLAYER</header>
 
-  <video id="player" src="{{file_url}}" controls playsinline></video>
-
-  <div class="downloadBtn">
-    <button onclick="downloadVideo()">⬇️ Download Now</button>
+  <div class="video-container">
+    <video id="player" src="{{file_url}}" controls playsinline></video>
   </div>
 
-  <!-- ✅ Footer -->
+  <div class="downloadBtn">
+    <button onclick="downloadVideo()">⬇️ Download Video</button>
+  </div>
+
   <footer>
-    ©️ 2025 Made By
+    ©️ 2025 Made With ❤️ By
     <a href="https://t.me/Sujan_BotZ" target="_blank" rel="noopener noreferrer">@Sujan_BotZ</a>
   </footer>
 
