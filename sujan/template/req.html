@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SUJAN BOTZ | {{file_name}}</title>
-  <link rel="icon" href="https://graph.org/file/385b9bb3996af1e20aaa7-e1ad0bd09db7960b44.jpg" type="image/x-icon" />
+  <link rel="icon"
+    href="https://graph.org/file/385b9bb3996af1e20aaa7-e1ad0bd09db7960b44.jpg"
+    type="image/x-icon" />
 
   <style>
     body {
@@ -34,15 +36,26 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     }
 
+    /* ✅ Video player */
     video {
       max-width: 90%;
       height: auto;
-      margin: 25px 0 20px 0;
+      margin: 25px 0 10px 0;
       border-radius: 10px;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
       background-color: #000;
     }
 
+    /* ✅ Text below video */
+    .info-text {
+      font-size: 16px;
+      color: #fff;
+      margin-top: 10px;
+      margin-bottom: 15px;
+      line-height: 1.4;
+    }
+
+    /* ✅ Download button */
     .downloadBtn button {
       background-color: #ffd43b;
       color: #000;
@@ -60,6 +73,7 @@
       transform: scale(1.05);
     }
 
+    /* ✅ Footer */
     footer {
       margin-top: 30px;
       font-size: 14px;
@@ -76,7 +90,7 @@
       text-decoration: underline;
     }
 
-    /* Smooth fade-in animation */
+    /* ✅ Smooth fade-in animation */
     body {
       animation: fadeIn 0.8s ease-in;
     }
@@ -99,10 +113,17 @@
     SUJAN BOTZ
   </header>
 
+  <!-- ✅ Video player -->
   <video id="player" src="{{file_url}}" controls playsinline></video>
 
+  <!-- ✅ Text below video -->
+  <div class="info-text">
+    𝖧𝖺𝗏𝗂𝗇𝗀 𝗍𝗋𝗈𝗎𝖻𝗅𝖾 𝗉𝗅𝖺𝗒𝗂𝗇𝗀 𝗍𝗁𝖾 𝗏𝗂𝖽𝖾𝗈?<br>𝖳𝗋𝗒 𝖽𝗈𝗐𝗇𝗅𝗈𝖺𝖽𝗂𝗇𝗀 𝗍𝗁𝖾 𝖿𝗂𝗅𝖾 👇
+  </div>
+
+  <!-- ✅ Download button -->
   <div class="downloadBtn">
-    <button onclick="downloadVideo()">🔻Download Now 🔻</button>
+    <button onclick="downloadVideo()">🔻 Download Now 🔻</button>
   </div>
 
   <!-- ✅ Footer -->
