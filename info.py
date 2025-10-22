@@ -48,7 +48,7 @@ SHORTLINK_API = environ.get('SHORTLINK_API')  # API key for shortlink
 
 # 💾 MongoDB Connection Information
 DB_URL = environ.get('DATABASE_URI', "mongodb+srv://puhhej12:puhhej12@cluster0.xoewzkz.mongodb.net/?retryWrites=true&w=majority")  # MongoDB connection URI
-DB_NAME = environ.get('DATABASE_NAME', "Sujan_BotZ")  # MongoDB database name
+DB_NAME = environ.get('DATABASE_NAME', "cluster0")  # MongoDB database name
 
 # 📸 all Media (Images)
 QR_CODE = environ.get('QR_CODE')  # QR Code image
