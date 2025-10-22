@@ -90,7 +90,7 @@ async def start(b, m):
     caption= SRT_TXT.format(m.from_user.mention(style="md")),
     reply_markup=InlineKeyboardMarkup(
         [[
-                 InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"https://t.me//TGFileToLinkxBot")
+                 InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"https://t.me/TGFileToLinkxBot")
         ],[
                  InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 2", url=f"https://t.me/FileStreamXProoBot")   
             ],[
@@ -217,7 +217,7 @@ async def cb_handler(client, query):
         caption= SRT_TXT.format(query.from_user.mention(style="md")),
         reply_markup=InlineKeyboardMarkup(
         [[
-                 InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"https://t.me//TGFileToLinkxBot")
+                 InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"https://t.me/TGFileToLinkxBot")
         ],[
                  InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 2", url=f"https://t.me/FileStreamXProoBot")   
             ],[
@@ -293,6 +293,7 @@ async def cb_handler(client, query):
         user_id =(data.split("_")[1])
         user_id = int(user_id.replace(' ' , ''))
         await query.message.edit(f"Tʜᴇ ᴜɴʙᴀɴ ᴏɴ <code>{user_id}</code> ᴡᴀs ᴇxᴇᴄᴜᴛᴇᴅ sɪʟᴇɴᴛʟʏ.")
+
 
 
 
