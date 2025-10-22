@@ -6,16 +6,16 @@ from Script import script  # Custom script file with caption & other settings
 # 🚀 Bot Session and Token Information
 SESSION = environ.get('SESSION', 'Sujan_BotZ')  # Pyrogram client session name
 
-API_ID = int(environ.get('API_ID', '25502576'))  # Telegram API ID
-API_HASH = environ.get('API_HASH', 'f0f35dbb5b0081cdc8d3c9d5383c4628')  # Telegram API Hash
-BOT_TOKEN = environ.get('BOT_TOKEN', '8020187926:AAHKh6eOIiW4MM5hvp6cYTBqGJsAJYnBz4Q')  # Telegram Bot Token
+API_ID = int(environ.get('API_ID', ''))  # Telegram API ID
+API_HASH = environ.get('API_HASH', '')  # Telegram API Hash
+BOT_TOKEN = environ.get('BOT_TOKEN', '')  # Telegram Bot Token
 
 # 👑, Channels & Logs
-BIN_CHANNEL = int(environ.get("BIN_CHANNEL", "-1001978535504"))  # File storage channel
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001978535504"))  # General log channel
-PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", "-1001978535504"))  # Premium user actions log
-VERIFIED_LOG = int(environ.get("VERIFIED_LOG", "-1001978535504"))  # Verified user actions log
-SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1001978535504"))
+BIN_CHANNEL = int(environ.get("BIN_CHANNEL", "-1001604872839"))  # File storage channel
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1001604872839"))  # General log channel
+PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", "-1001604872839"))  # Premium user actions log
+VERIFIED_LOG = int(environ.get("VERIFIED_LOG", "-1001604872839"))  # Verified user actions log
+SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1001604872839"))
 
 # add admin IDs 11111 2222 3333 and add auth channel IDs -100XXX -100XXX -100XXX
 ADMINS = list(map(int, environ.get('ADMINS', '5123039648').split()))  # List of admin user IDs
@@ -23,7 +23,7 @@ AUTH_CHANNEL = list(map(int, environ.get("AUTH_CHANNEL", "-1001861445521").split
 
 # username add without @
 OWNER_USERNAME = environ.get("OWNER_USERNAME", 'Sujan_Ch')  # Owner's username
-BOT_USERNAME = environ.get("BOT_USERNAME", 'TGFileToLinkxBot')  # Bot's username
+BOT_USERNAME = environ.get("BOT_USERNAME", 'FileStreamXProRoBot')  # Bot's username
 
 # 🔗 Channel & Support Links
 CHANNEL = environ.get('UPDATE CHANNEL', 'https://t.me/Sujan_Ch')  # Updates channel
@@ -47,7 +47,7 @@ SHORTLINK_URL = environ.get('SHORTLINK_URL')  # Shortener site
 SHORTLINK_API = environ.get('SHORTLINK_API')  # API key for shortlink
 
 # 💾 MongoDB Connection Information
-DB_URL = environ.get('DATABASE_URI', "mongodb+srv://copakim927:copakim927@cluster0.j6qikzi.mongodb.net/?retryWrites=true&w=majority")  # MongoDB connection URI
+DB_URL = environ.get('DATABASE_URI', "mongodb+srv://puhhej12:puhhej12@cluster0.xoewzkz.mongodb.net/?retryWrites=true&w=majority")  # MongoDB connection URI
 DB_NAME = environ.get('DATABASE_NAME', "Sujan_BotZ")  # MongoDB database name
 
 # 📸 all Media (Images)
