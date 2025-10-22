@@ -1,2 +1,2 @@
-web: python -m sujan
- 
+web: python bot.py
+
