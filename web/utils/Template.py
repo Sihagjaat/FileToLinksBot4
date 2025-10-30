@@ -1,5 +1,5 @@
 class sujanbotz_template(object):
-    NAME = "SUJAN BOTZ"
+    NAME = "STREAMING BOT"
 
     DISCLAIMER = (
         "This website only provides a service to help you play your video online without downloading. "
