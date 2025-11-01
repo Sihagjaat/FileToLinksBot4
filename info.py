@@ -65,8 +65,8 @@ CHANNEL_FILE_CAPTION = environ.get('CHANNEL_FILE_CAPTION', f"{script.CAPTION}") 
 # ⏱️ Time & Rate Limit Settings
 PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # Ping interval in seconds (20 minutes)
 SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))  # Threshold for sleep delay
-RATE_LIMIT_TIMEOUT = int(environ.get("RATE_LIMIT_TIMEOUT", "600"))  # Rate limit time (10 mins)
-MAX_FILES = int(environ.get("MAX_FILES", "10"))  # Max files allowed per user
+RATE_LIMIT_TIMEOUT = int(environ.get("RATE_LIMIT_TIMEOUT", "60"))  # Rate limit time (10 mins)
+MAX_FILES = int(environ.get("MAX_FILES", "5"))  # Max files allowed per user
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 60))  # Time (in hours) after which verification expires
 
 # ⚙️ Worker Configuration
