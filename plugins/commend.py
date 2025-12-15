@@ -31,9 +31,9 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT.format(me2, user_id, mention))
     if len(message.command) == 1 or message.command[1] == "start":
         buttons = [[
-			InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"https://t.me/TGFileToLinkxBot")
+			InlineKeyboardButton("🪙 Fʀᴇᴇ Eᴀʀɴɪɴɢ/Cʟᴀɪᴍ Rᴇᴡᴀʀᴅ 💰", url=f"https://t.co/TM55SfrEvm")
         ],[
-                 InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 2", url=f"https://t.me/FileStreamXProoBot")   
+            InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"https://t.co/Sg21LSSr5H")   
             ],[
             InlineKeyboardButton('• Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ •', url=CHANNEL)
         ], [
@@ -173,9 +173,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.delete()
     elif query.data == "about":
         buttons = [[
-	    InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"https://t.me/TGFileToLinkxBot")
+	    InlineKeyboardButton("🪙 Fʀᴇᴇ Eᴀʀɴɪɴɢ/Cʟᴀɪᴍ Rᴇᴡᴀʀᴅ 💰", url=f"https://t.co/TM55SfrEvm")
         ],[
-                 InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 2", url=f"https://t.me/FileStreamXProoBot")   
+            InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"https://t.co/Sg21LSSr5H")   
             ],[
             InlineKeyboardButton('• Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ •', url=CHANNEL)
         ], [
@@ -192,9 +192,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"https://t.me/TGFileToLinkxBot")
+            InlineKeyboardButton("🪙 Fʀᴇᴇ Eᴀʀɴɪɴɢ/Cʟᴀɪᴍ Rᴇᴡᴀʀᴅ 💰", url=f"https://t.co/TM55SfrEvm")
         ],[
-                 InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 2", url=f"https://t.me/FileStreamXProoBot")   
+            InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"https://t.co/Sg21LSSr5H")   
             ],[
             InlineKeyboardButton('• Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ •', url=CHANNEL)
         ], [
