@@ -73,8 +73,11 @@ async def private_receive_handler(c: Client, m: Message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("• Sᴛʀᴇᴀᴍ •", url=stream),
-                 InlineKeyboardButton("• Dᴏᴡɴʟᴏᴀᴅ •", url=download)],
-                [InlineKeyboardButton("• Gᴇᴛ Fɪʟᴇ •", url=file_link),
+                 InlineKeyboardButton("• Nᴏʀᴍᴀʟ Dᴏᴡɴʟᴏᴀᴅ  •", url=download)
+                ],[
+                InlineKeyboardButton("• Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ •", url=f'https://t.co/mlIoNrVkmq')
+                ],[
+                InlineKeyboardButton("• Gᴇᴛ Fɪʟᴇ •", url=file_link),
                  InlineKeyboardButton("• Sʜᴀʀᴇ•", url=share_link)],
                 [InlineKeyboardButton("• Dᴇʟᴇᴛᴇ Fɪʟᴇ •", callback_data=f"deletefile_{forwarded.id}"),
                  InlineKeyboardButton("• Cʟᴏꜱᴇ •", callback_data="close_data")]
