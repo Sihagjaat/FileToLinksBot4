@@ -72,10 +72,9 @@ async def private_receive_handler(c: Client, m: Message):
             script.CAPTION_TXT.format(CHANNEL, file_name, file_size, stream, download),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("• Sᴛʀᴇᴀᴍ •", url=stream),
-                 InlineKeyboardButton("• Dᴏᴡɴʟᴏᴀᴅ •", url=download)
+                [InlineKeyboardButton("• Sᴛʀᴇᴀᴍ & Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ •", url=stream)
                 ],[
-                InlineKeyboardButton("• Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ •", url=f'https://t.co/mlIoNrVkmq')
+                InlineKeyboardButton("• Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ •", url=f'https://t.co/mlIoNrVkmq')
                 ],[
                 InlineKeyboardButton("• Gᴇᴛ Fɪʟᴇ •", url=file_link),
                  InlineKeyboardButton("• Sʜᴀʀᴇ•", url=share_link)],
