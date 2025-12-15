@@ -83,10 +83,6 @@ Nᴀᴍᴇ - {}</b>"""
 
 <b>📦 Fɪʟᴇ sɪᴢᴇ :- </b> <i>{}</i>
 
-<b>🖥 Stream  : </b> <code>{}</code>
-
-<b>📥 Download : </b> <code>{}</code>
-
 <b>📝 Nᴏᴛᴇ : Aʟʟ Gᴇɴᴇʀᴀᴛᴇᴅ Lɪɴᴋꜱ Wɪʟʟ Bᴇ ᴇxᴘɪʀᴇ Iɴ 24 Hᴏᴜʀꜱ</b>"""
 
     VERIFICATION_TEXT = """<b>👋 ʜᴇʏ {},
