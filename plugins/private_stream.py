@@ -73,7 +73,7 @@ async def private_receive_handler(c: Client, m: Message):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton("• Sᴛʀᴇᴀᴍ •", url=stream),
-                 InlineKeyboardButton("• Nᴏʀᴍᴀʟ Dᴏᴡɴʟᴏᴀᴅ  •", url=download)
+                 InlineKeyboardButton("• Dᴏᴡɴʟᴏᴀᴅ •", url=download)
                 ],[
                 InlineKeyboardButton("• Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ •", url=f'https://t.co/mlIoNrVkmq')
                 ],[
