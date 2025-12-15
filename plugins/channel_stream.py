@@ -48,9 +48,9 @@ async def channel_receive_handler(bot: Client, broadcast: Message):
         )
         new_caption = CHANNEL_FILE_CAPTION.format(CHANNEL, file_name)
         buttons_list = [
-            [InlineKeyboardButton("• Sᴛʀᴇᴀᴍ •", url=stream),
-             InlineKeyboardButton("• Dᴏᴡɴʟᴏᴀᴅ •", url=download)],
-            [InlineKeyboardButton("• Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ •", url=f'https://t.co/mlIoNrVkmq')]
+            [InlineKeyboardButton("• Sᴛʀᴇᴀᴍ & Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ •", url=stream)
+            ],[
+            InlineKeyboardButton("• Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ •", url=f'https://t.co/mlIoNrVkmq')]
         ]
         if IS_SHORTLINK:
             buttons_list.append([
