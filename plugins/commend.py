@@ -33,10 +33,9 @@ async def start(client, message):
         buttons = [[
 			InlineKeyboardButton("🪙 Fʀᴇᴇ Eᴀʀɴɪɴɢ/Cʟᴀɪᴍ Rᴇᴡᴀʀᴅ 💰", url=f"https://t.co/TM55SfrEvm")
         ],[
-            InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"https://t.co/Sg21LSSr5H")   
+            InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"t.me/TGFileToLinkxBot")   
             ],[
-            InlineKeyboardButton('• Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ •', url=CHANNEL)
-        ], [
+        ],[
             InlineKeyboardButton('• Hᴇʟᴘ •', callback_data='help'),
             InlineKeyboardButton('• Aʙᴏᴜᴛ •', callback_data='about')
         #],[
@@ -175,10 +174,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
 	    InlineKeyboardButton("🪙 Fʀᴇᴇ Eᴀʀɴɪɴɢ/Cʟᴀɪᴍ Rᴇᴡᴀʀᴅ 💰", url=f"https://t.co/TM55SfrEvm")
         ],[
-            InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"https://t.co/Sg21LSSr5H")   
-            ],[
-            InlineKeyboardButton('• Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ •', url=CHANNEL)
-        ], [
+            InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"t.me/TGFileToLinkxBot") 
+        ],[
             InlineKeyboardButton('• Hᴏᴍᴇ •', callback_data='start'),
 	    InlineKeyboardButton('• Cʟᴏsᴇ •', callback_data='close_data')
         ]]
