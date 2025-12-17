@@ -72,9 +72,9 @@ async def private_receive_handler(c: Client, m: Message):
             script.CAPTION_TXT.format(CHANNEL, file_name, file_size, stream, download),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("• Sᴛʀᴇᴀᴍ & Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ •", url=stream)
+                [InlineKeyboardButton("• Sᴛʀᴇᴀᴍ & Dᴏᴡɴʟᴏᴀᴅ •", url=stream)
                 ],[
-                InlineKeyboardButton("• Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ •", url=f'https://t.co/mlIoNrVkmq')
+                InlineKeyboardButton("• Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ •", url=f'https://www.effectivegatecpm.com/d4c6b6qk?key=53b004d54f4bc1a574c1b95f063a0fa9')
                 ],[
                 InlineKeyboardButton("• Gᴇᴛ Fɪʟᴇ •", url=file_link),
                  InlineKeyboardButton("• Sʜᴀʀᴇ•", url=share_link)],
