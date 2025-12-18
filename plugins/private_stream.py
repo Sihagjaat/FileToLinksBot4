@@ -72,7 +72,8 @@ async def private_receive_handler(c: Client, m: Message):
             script.CAPTION_TXT.format(CHANNEL, file_name, file_size, stream, download),
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton("• Sᴛʀᴇᴀᴍ & Dᴏᴡɴʟᴏᴀᴅ •", url=stream)
+                [InlineKeyboardButton("• Sᴛʀᴇᴀᴍ •", url=stream),
+                 InlineKeyboardButton("• Dᴏᴡɴʟᴏᴀᴅ •", url=download)
                 ],[
                 InlineKeyboardButton("• Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ •", url=f'https://www.effectivegatecpm.com/d4c6b6qk?key=53b004d54f4bc1a574c1b95f063a0fa9')
                 ],[
