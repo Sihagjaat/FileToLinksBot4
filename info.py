@@ -11,11 +11,11 @@ API_HASH = environ.get('API_HASH', '')  # Telegram API Hash
 BOT_TOKEN = environ.get('BOT_TOKEN', '')  # Telegram Bot Token
 
 # 👑, Channels & Logs
-BIN_CHANNEL = int(environ.get("BIN_CHANNEL", "-1002101175853"))  # File storage channel
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002101175853"))  # General log channel
-PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", "-1002101175853"))  # Premium user actions log
-VERIFIED_LOG = int(environ.get("VERIFIED_LOG", "-1002101175853"))  # Verified user actions log
-SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002101175853"))
+BIN_CHANNEL = int(environ.get("BIN_CHANNEL", "-1002143289748"))  # File storage channel
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1002143289748"))  # General log channel
+PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", "-1002143289748"))  # Premium user actions log
+VERIFIED_LOG = int(environ.get("VERIFIED_LOG", "-1002143289748"))  # Verified user actions log
+SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1002143289748"))
 
 # add admin IDs 11111 2222 3333 and add auth channel IDs -100XXX -100XXX -100XXX
 ADMINS = list(map(int, environ.get('ADMINS', '5123039648').split()))  # List of admin user IDs
@@ -23,7 +23,7 @@ AUTH_CHANNEL = list(map(int, environ.get("AUTH_CHANNEL", "-1001861445521").split
 
 # username add without @
 OWNER_USERNAME = environ.get("OWNER_USERNAME", 'Sujan_Ch')  # Owner's username
-BOT_USERNAME = environ.get("BOT_USERNAME", 'FileStreamXProRoBot')  # Bot's username
+BOT_USERNAME = environ.get("BOT_USERNAME", 'FileStreamXProoBot')  # Bot's username
 
 # 🔗 Channel & Support Links
 CHANNEL = environ.get('UPDATE CHANNEL', 'https://t.me/Sujan_Ch')  # Updates channel
@@ -47,7 +47,7 @@ SHORTLINK_URL = environ.get('SHORTLINK_URL')  # Shortener site
 SHORTLINK_API = environ.get('SHORTLINK_API')  # API key for shortlink
 
 # 💾 MongoDB Connection Information
-DB_URL = environ.get('DATABASE_URI', "mongodb+srv://puhhej12:puhhej12@cluster0.xoewzkz.mongodb.net/?retryWrites=true&w=majority")  # MongoDB connection URI
+DB_URL = environ.get('DATABASE_URI', "mongodb+srv://sujanchy200:sujanchy200@cluster0.rxooijn.mongodb.net/?retryWrites=true&w=majority")  # MongoDB connection URI
 DB_NAME = environ.get('DATABASE_NAME', "cluster0")  # MongoDB database name
 
 # 📸 all Media (Images)
