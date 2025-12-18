@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <title>SUJAN BOTZ | {{file_name}}</title>
@@ -11,7 +10,7 @@
     content="Stream high-quality videos and movies in 1080p. Experience seamless playback with multiple player options." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- External CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.plyr.io/3.6.12/plyr.css" />
@@ -20,116 +19,109 @@
 </head>
 
 <body class="bg-dark text-light">
-  <div class="d-flex flex-column min-vh-100">
+<div class="d-flex flex-column min-vh-100">
 
-    <!-- Header -->
-    <header class="py-2 shadow"
-      style="background-color: {{ colours.header.background }} !important; color: {{ colours.header.color }} !important;">
-      <div class="d-flex justify-content-between align-items-center container">
-        <h1 class="h4 mb-0 fw-bold">{{template_ne}}</h1>
+  <!-- HEADER -->
+  <header class="py-2 shadow"
+    style="background-color: {{ colours.header.background }}; color: {{ colours.header.color }};">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h4 mb-0 fw-bold">{{template_ne}}</h1>
+      <button id="theme-toggle-btn" class="btn btn-light">
+        <i class="fa-solid fa-sun"></i> Light Mode
+      </button>
+    </div>
+  </header>
 
-        <button id="theme-toggle-btn" class="btn btn-light theme-toggle-btn">
-          <i class="fa-solid fa-sun"></i> Light Mode
+  <!-- MAIN -->
+  <main class="flex-grow-1 container py-3">
+
+    <!-- VIDEO PLAYER -->
+    <div class="player-wrapper mb-3">
+      <video id="myVideo" class="w-100" controls>
+        <source src="{{file_url}}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- DOWNLOAD BUTTONS -->
+    <div class="row g-3 mb-4">
+      <div class="col-md-6">
+
+        <!-- FAST DOWNLOAD -->
+        <a href="https://www.effectivegatecpm.com/d4c6b6qk?key=53b004d54f4bc1a574c1b95f063a0fa9"
+           target="_blank"
+           class="btn w-100 mb-2"
+           style="background:#ffc107;color:#000;border:none;">
+          <i class="fa-solid fa-bolt me-2"></i> Fast Download
+        </a>
+
+        <!-- NORMAL DOWNLOAD (FIXED) -->
+        <button onclick="streamDownload()"
+          class="btn w-100"
+          style="background-color:{{ colours.download.background }};color:{{ colours.download.color }};border:none;">
+          <i class="fa-solid fa-download me-2"></i> Normal Download
         </button>
+
       </div>
-    </header>
+    </div>
 
-    <!-- Main Content -->
-    <main class="flex-grow-1 container py-3">
-
-      <!-- Video Player -->
-      <div class="player-wrapper mb-3">
-        <video id="myVideo" src="{{file_url}}" class="w-100" controls>
-          Your browser does not support the video tag.
-        </video>
+    <!-- FILE INFO -->
+    <div class="card border-secondary mb-4"
+      style="background-color:{{ colours.file_information.background }};
+             color:{{ colours.file_information.color }};">
+      <div class="card-header border-secondary">
+        <h5 class="mb-0">
+          <i class="fa-solid fa-circle-info me-2"></i> File Information
+        </h5>
       </div>
-
-      <script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
-
-      <!-- External Players -->
-      <!--div class="d-flex justify-content-between mb-3 flex-wrap gap-2">
-        <a onclick="mx_player()" class="btn flex-fill"
-          style="border:none;background-color:{{ colours.mx_player.background }};color:{{ colours.mx_player.color }};">
-          <i class="fa fa-play"></i> <b>MX Player</b>
-        </a>
-
-        <a onclick="vlc_player()" class="btn flex-fill"
-          style="border:none;background-color:{{ colours.vlc_player.background }};color:{{ colours.vlc_player.color }};">
-          <i class="fa fa-play"></i> <b>VLC Player</b>
-        </a>
-
-        <a onclick="playit_player()" class="btn flex-fill"
-          style="border:none;background-color:{{ colours.playit_player.background }};color:{{ colours.playit_player.color }};">
-          <i class="fa fa-play"></i> <b>Play It</b>
-        </a>
+      <div class="card-body">
+        <p><strong>Name:</strong> {{file_name}}</p>
+        <p><strong>Size:</strong> {{file_size}}</p>
       </div>
+    </div>
 
-      <!-- Download Buttons -->
-      <div class="row g-3 mb-3">
-        <div class="col-md-6">
+    <!-- DISCLAIMER -->
+    <div class="alert alert-warning"
+      style="background-color:{{ colours.description.background }};
+             color:{{ colours.description.color }};">
+      <h6 class="fw-bold">
+        <i class="fa-solid fa-triangle-exclamation me-2"></i> Disclaimer
+      </h6>
+      <p class="mb-2">{{disclaimer}}</p>
+      <a href="{{report_link}}" class="btn btn-danger btn-sm">Report</a>
+    </div>
 
-          <!-- FAST DOWNLOAD (FIXED + YELLOW) -->
-          <a href="https://www.effectivegatecpm.com/d4c6b6qk?key=53b004d54f4bc1a574c1b95f063a0fa9"
-            target="_blank"
-            class="btn w-100 mb-2"
-            style="border:none;background-color:#ffc107;color:#000;">
-            <i class="fa-solid fa-download me-2"></i> Fast Download
-          </a>
+  </main>
+</div>
 
-          <!-- NORMAL DOWNLOAD -->
-          <a onclick="streamDownload()"
-            class="btn w-100"
-            style="border:none;background-color:{{ colours.download.background }};color:{{ colours.download.color }};">
-            <i class="fa-solid fa-download me-2"></i> Normal Download
-          </a>
+<!-- JS -->
+<script src="https://cdn.plyr.io/3.6.12/plyr.js"></script>
+<script src="https://av-bo-tz.vercel.app/548/551/play.js"></script>
 
-        </div>
-      </div>
+<script>
+  // Initialize Plyr
+  document.addEventListener("DOMContentLoaded", () => {
+    new Plyr("#myVideo");
+  });
 
-      <!-- File Information -->
-      <div class="card border-secondary mb-4"
-        style="background-color:{{ colours.file_information.background }} !important;
-               color:{{ colours.file_information.color }} !important;">
-        <div class="card-header border-secondary">
-          <h5 class="mb-0">
-            <i class="fa-solid fa-circle-info me-2"></i> File Information
-          </h5>
-        </div>
+  // NORMAL DOWNLOAD FUNCTION (NO ERRORS)
+  function streamDownload() {
+    const fileUrl = "{{file_url}}";
+    const fileName = "{{file_name}}";
 
-        <div class="card-body">
-          <p><strong>Name:</strong> {{file_name}}</p>
-          <p><strong>Size:</strong> {{file_size}}</p>
-        </div>
-      </div>
+    if (!fileUrl) {
+      alert("Download link not available!");
+      return;
+    }
 
-      <!-- Disclaimer -->
-      <div class="alert alert-warning"
-        style="background-color:{{ colours.description.background }};
-               color:{{ colours.description.color }};">
-        <h6 class="fw-bold">
-          <i class="fa-solid fa-triangle-exclamation me-2"></i> Disclaimer
-        </h6>
-        <p class="mb-2">{{disclaimer}}</p>
-
-        <div class="button-container">
-          <a href="{{report_link}}" class="report">Report</a>
-        </div>
-      </div>
-
-    </main>
-
-  </div>
-
-  <!-- External JS -->
-  <script src="https://av-bo-tz.vercel.app/548/551/play.js"></script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      console.log("JS Loaded Successfully");
-      new Plyr('#myVideo');
-    });
-  </script>
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = fileName || "video.mp4";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
 
 </body>
-</html>
-
+</html>                                    <button type="button" class="player-card dropdown-item" role="menuitem" data-player-type="nplayer">
