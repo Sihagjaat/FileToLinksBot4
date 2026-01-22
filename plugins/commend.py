@@ -31,9 +31,9 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT.format(me2, user_id, mention))
     if len(message.command) == 1 or message.command[1] == "start":
         buttons = [[
-			InlineKeyboardButton("🪙 Fʀᴇᴇ Eᴀʀɴɪɴɢ & Cʟᴀɪᴍ Rᴇᴡᴀʀᴅ 💰", url=f"https://www.effectivegatecpm.com/d4c6b6qk?key=53b004d54f4bc1a574c1b95f063a0fa9")
+			InlineKeyboardButton("🪙 Fʀᴇᴇ Eᴀʀɴɪɴɢ & Cʟᴀɪᴍ Rᴇᴡᴀʀᴅ 💰", url=f"https://t.me/+zdVdphIPKzQyMWY1")
         ],[
-            InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"t.me/TGFileToLinkxBot")   
+            InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"t.me/linkdebhaioffical")   
             ],[
         ],[
             InlineKeyboardButton('• Hᴇʟᴘ •', callback_data='help'),
@@ -172,9 +172,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.message.delete()
     elif query.data == "about":
         buttons = [[
-	    InlineKeyboardButton("🪙 Fʀᴇᴇ Eᴀʀɴɪɴɢ & Cʟᴀɪᴍ Rᴇᴡᴀʀᴅ 💰", url=f"https://www.effectivegatecpm.com/d4c6b6qk?key=53b004d54f4bc1a574c1b95f063a0fa9")
+	    InlineKeyboardButton("🪙 Fʀᴇᴇ Eᴀʀɴɪɴɢ & Cʟᴀɪᴍ Rᴇᴡᴀʀᴅ 💰", url=f"https://t.me/+zdVdphIPKzQyMWY1")
         ],[
-            InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"t.me/TGFileToLinkxBot") 
+            InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"t.me/linkdebhaioffical") 
         ],[
             InlineKeyboardButton('• Hᴏᴍᴇ •', callback_data='start'),
 	    InlineKeyboardButton('• Cʟᴏsᴇ •', callback_data='close_data')
@@ -189,9 +189,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
     
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton("🪙 Fʀᴇᴇ Eᴀʀɴɪɴɢ/Cʟᴀɪᴍ Rᴇᴡᴀʀᴅ 💰", url=f"https://www.effectivegatecpm.com/d4c6b6qk?key=53b004d54f4bc1a574c1b95f063a0fa9")
+            InlineKeyboardButton("🪙 Fʀᴇᴇ Eᴀʀɴɪɴɢ/Cʟᴀɪᴍ Rᴇᴡᴀʀᴅ 💰", url=f"https://t.me/+zdVdphIPKzQyMWY1")
         ],[
-            InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"https://t.co/Sg21LSSr5H")   
+            InlineKeyboardButton("Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1", url=f"t.me/linkdebhaioffical")   
         ],[
             InlineKeyboardButton('• Hᴇʟᴘ •', callback_data='help'),
             InlineKeyboardButton('• Aʙᴏᴜᴛ •', callback_data='about')
@@ -430,9 +430,9 @@ async def delete_files_list(client, message):
 @Client.on_message(filters.command("about"))
 async def about(client, message):
     buttons = [[
-       InlineKeyboardButton('• Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1 •', url='https://t.me/FileStreamXProoBot')
+       InlineKeyboardButton('• Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1 •', url='https://t.me/linkdebhaioffical')
 		],[
-            InlineKeyboardButton('• Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ •', url=CHANNEL)
+            InlineKeyboardButton('• Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ •', url='https://t.me/FluxDrives)
         ], [
        InlineKeyboardButton('• ᴄʟᴏsᴇ •', callback_data='close_data')
     ]]
