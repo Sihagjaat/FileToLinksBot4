@@ -20,6 +20,9 @@ from web import web_server, check_expired_premium
 from web.server import Websujanbot
 from utils import temp, ping_server
 from web.server.clients import initialize_clients
+from pyrogram import utils as pyroutils
+pyroutils.MIN_CHAT_ID = -999999999999
+pyroutils.MIN_CHANNEL_ID = -100999999999999
 
 
 ppath = "plugins/*.py"
@@ -73,3 +76,4 @@ if __name__ == '__main__':
         loop.run_until_complete(start())
     except KeyboardInterrupt:
         logging.info('----------------------- Service Stopped -----------------------')
+
