@@ -12,7 +12,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '')  # Telegram Bot Token
 
 # 👑, Channels & Logs
 BIN_CHANNEL = int(environ.get("BIN_CHANNEL", "-1003554063083"))  # File storage channel
-LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "-1003568758638"))  # General log channel
+LOG_CHANNEL = int(environ.get("LOG_CHANNEL", "0"))  # General log channel
 PREMIUM_LOGS = int(environ.get("PREMIUM_LOGS", "-1003554063083"))  # Premium user actions log
 VERIFIED_LOG = int(environ.get("VERIFIED_LOG", "-1003554063083"))  # Verified user actions log
 SUPPORT_GROUP = int(environ.get("SUPPORT_GROUP", "-1003654058348"))
