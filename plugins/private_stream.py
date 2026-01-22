@@ -23,7 +23,7 @@ async def private_receive_handler(c: Client, m: Message):
         user_data = await db.get_block_data(user_id)
         await m.reply(
             f"🚫 **Yᴏᴜ ᴀʀᴇ ʙᴀɴɴᴇᴅ ғʀᴏᴍ ᴜꜱɪɴɢ ᴛʜɪꜱ ʙᴏᴛ.**\n\n"
-            f"🔄 **Cᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ ɪғ ʏᴏᴜ ᴛʜɪɴᴋ ᴛʜɪꜱ ɪꜱ ᴀ ᴍɪꜱᴛᴀᴋᴇ.**\n\n@Sujan_Ch"
+            f"🔄 **Cᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ ɪғ ʏᴏᴜ ᴛʜɪɴᴋ ᴛʜɪꜱ ɪꜱ ᴀ ᴍɪꜱᴛᴀᴋᴇ.**\n\n@ContactToAdminToBot"
         )
         return
     if not await db.has_premium_access(user_id):
@@ -75,7 +75,7 @@ async def private_receive_handler(c: Client, m: Message):
                 [InlineKeyboardButton("• Sᴛʀᴇᴀᴍ •", url=stream),
                  InlineKeyboardButton("• Dᴏᴡɴʟᴏᴀᴅ •", url=download)
                 ],[
-                InlineKeyboardButton("• Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ •", url=f'https://www.effectivegatecpm.com/d4c6b6qk?key=53b004d54f4bc1a574c1b95f063a0fa9')
+                InlineKeyboardButton("• Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ •", url=f'https://t.me/+zdVdphIPKzQyMWY1')
                 ],[
                 InlineKeyboardButton("• Gᴇᴛ Fɪʟᴇ •", url=file_link),
                  InlineKeyboardButton("• Sʜᴀʀᴇ•", url=share_link)],
