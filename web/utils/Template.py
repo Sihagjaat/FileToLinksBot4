@@ -6,7 +6,7 @@ class sujanbotz_template(object):
         "You can report files or videos that contain issues like copyright infringement, +18 content, violence, etc."
     )
 
-    REPORT_LINK = "https://t.me/Sujan_Ch"
+    REPORT_LINK = "https://t.me/ContactToAdminToBot"
 
     COLOURS = {
         "header": {"background": "#48cffe", "color": "#ffffff"},
