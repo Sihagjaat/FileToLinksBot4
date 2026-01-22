@@ -22,7 +22,7 @@ async def channel_receive_handler(bot: Client, broadcast: Message):
                     await bot.send_message(
                         chat_id,
                         f"🚫 **Tʜɪꜱ ᴄʜᴀɴɴᴇʟ ɪꜱ ʙᴀɴɴᴇᴅ ғʀᴏᴍ ᴜꜱɪɴɢ ᴛʜᴇ ʙᴏᴛ.**\n\n"
-                        f"🔄 **Cᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ ɪғ ʏᴏᴜ ᴛʜɪɴᴋ ᴛʜɪꜱ ɪꜱ ᴀ ᴍɪꜱᴛᴀᴋᴇ.**\n\n@Sujan_Ch"
+                        f"🔄 **Cᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ ɪғ ʏᴏᴜ ᴛʜɪɴᴋ ᴛʜɪꜱ ɪꜱ ᴀ ᴍɪꜱᴛᴀᴋᴇ.**\n\n@ContactToAdminToBot"
                     )
                 except:
                     pass  # mute errors
@@ -51,7 +51,7 @@ async def channel_receive_handler(bot: Client, broadcast: Message):
             [InlineKeyboardButton("• Sᴛʀᴇᴀᴍ •", url=stream),
              InlineKeyboardButton("• Dᴏᴡɴʟᴏᴀᴅ •", url=download)
             ],[
-            InlineKeyboardButton("• Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ •", url=f'https://www.effectivegatecpm.com/d4c6b6qk?key=53b004d54f4bc1a574c1b95f063a0fa9')]
+            InlineKeyboardButton("• Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ •", url=f'https://linkdebhai.lovable.app/')]
         ]
         if IS_SHORTLINK:
             buttons_list.append([
