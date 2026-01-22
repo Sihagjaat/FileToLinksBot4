@@ -47,7 +47,7 @@ SHORTLINK_URL = environ.get('https://arolinks.com')  # Shortener site
 SHORTLINK_API = environ.get('2bd6b41b022d08c3d13cbe229497092a5c30cc7e')  # API key for shortlink
 
 # 💾 MongoDB Connection Information
-DB_URL = environ.get('DATABASE_URI', "")  # MongoDB connection URI
+DB_URL = environ.get('DATABASE_URI', "mongodb+srv://Linkdebhai:5eeAHgASOGCxV8eZ@cluster0.ygfelcs.mongodb.net/?appName=Cluster0")  # MongoDB connection URI
 DB_NAME = environ.get('DATABASE_NAME', "Sujan_BotZ")  # MongoDB database name
 
 # 📸 all Media (Images)
