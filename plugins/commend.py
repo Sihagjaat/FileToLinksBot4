@@ -1,4 +1,4 @@
-import os, random, asyncio, time, re, pytz
+iimport os, random, asyncio, time, re, pytz
 from Script import script
 from database.users_db import db
 from pyrogram import Client, filters, enums
@@ -432,7 +432,7 @@ async def about(client, message):
     buttons = [[
        InlineKeyboardButton('• Fɪʟᴇ Tᴏ Lɪɴᴋ Bᴏᴛ 1 •', url='https://t.me/linkdebhaioffical')
 		],[
-            InlineKeyboardButton('• Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ •', url='https://t.me/FluxDrives)
+            InlineKeyboardButton('• Uᴘᴅᴀᴛᴇ Cʜᴀɴɴᴇʟ •', url='https://t.me/FluxDrives')
         ], [
        InlineKeyboardButton('• ᴄʟᴏsᴇ •', callback_data='close_data')
     ]]
